@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>workout</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: whitesmoke;
+    }
+    .navbar {
+        background: white;
+        font-family: calibri;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .navdiv {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo a {
+        font-size: 35px;
+        font-weight: 500;
+        color: black;
+        text-decoration: none;
+    }
+
+    li {
+        list-style: none;
+        display: inline-block;
+    }
+
+    li a {
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 25px;
+        text-decoration: none;
+        padding: 70px;
+    }
+
+    .content {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .content h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .content .author {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .content .author img {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .content .author .name {
+        font-weight: bold;
+    }
+
+    .content .author .date {
+        color: #888;
+        margin-left: 10px;
+    }
+
+    .content img.main-image {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .content p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .content .toc {
+        background-color: #f1f1f1;
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .content .toc h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .content .toc ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .content .toc ul li {
+        margin-bottom: 5px;
+    }
+
+    .content .toc ul li a {
+        font-size: 17px;
+        text-decoration: none;
+        color: #007bff;
+    }
+
+    .content h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        margin-top: 80px;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-4">
+        <img src="https://png.pngtree.com/png-vector/20240115/ourmid/pngtree-3d-body-builder-gym-logo-image-png-image_11437963.png" alt="Bootstrap" width="80" height="60">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">FitSphere</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../Diet/diet.html">Diet</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../weightloss/WeightLoss.html">WeightLoss</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../yoga/Yoga.html">Yoga</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Health/health.html">Health</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Workout/workout.html">Workout</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../BMI calculator/index.html">BMI Calculator</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="content">
+        <h1>
+            Employee Wellness Policy: A Comprehensive Guide
+        </h1>
+        <div class="author">
+            <!-- <img alt="Author Image" height="40"
+                src="https://storage.googleapis.com/a1aa/image/7AuhKGiWffop0kRBNVuQRhYwOj6ZQIfBdod7mIpK5HX6aWZnA.jpg"
+                width="40" /> -->
+            <div class="name">
+                Aditi Shenai
+            </div>
+            <div class="date">
+                September 19, 2024
+            </div>
+        </div>
+        <img alt="Workout" class="main-image" height="400"
+            src="https://www.healthifyme.com/blog/wp-content/uploads/2024/09/employee-policy-2560x1600.jpg" width="800" />
+        <p>
+            An employee wellness program policy highlights the organisational vision to enhance employee health and well-being. A wellness policy seeks to assist employees in achieving their health goals at a fundamental level. It covers areas such as weight management, improvement in fitness level, metabolic health parameters, stress management, mobility, flexibility, and immunity buildup as the starting point. However, a wellness policy in its evolved state has a far-reaching impact- it gets linked to productivity, retention, ROI, alignment with organisational goals, mission and vision statements and many more. 
+        </p>
+
+        <br>
+
+        <div id="diet">
+            <h1 style="font-size: 24px; font-weight: bold;">Employee Wellness Policy: A Comprehensive Guide</h1>
+            <p style="font-size: 14px; line-height: 1.6;">
+                An Employee Wellness Policy is a strategic framework designed to promote the physical, mental, and emotional well-being of employees. It reflects an organization's commitment to creating a healthy, productive, and positive work environment.
+<br>
+<br>
+Purpose of an Employee Wellness Policy
+The primary goal is to enhance employee health and happiness, reduce absenteeism, boost morale, and improve productivity. It also helps companies attract and retain top talent by fostering a culture that values well-being.
+            </p>
+
+            <h1 style="font-size: 24px; font-weight: bold;">Key Components of an Employee Wellness Policy
+            </h1>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Health Screenings: Offer regular health check-ups and preventive screenings.
+            </p>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Fitness Programs: Provide access to on-site gyms, fitness challenges, or discounted gym memberships.
+            </p>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Healthy Eating Options: Include healthy snacks in the office pantry or subsidized nutritious meals.
+            </p>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Counseling Services: Offer access to mental health professionals or Employee Assistance Programs (EAPs).
+            </p>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Invest in ergonomic furniture and workstations to minimize physical strain.
+            </p>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Organize step challenges, team sports events, or wellness weeks to engage employees in healthy competition.
+            </p>
+
+            <h1 style="font-size: 24px; font-weight: bold;">Implementation Guidelines</h1>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Assessment: Conduct employee surveys to identify specific wellness needs.
+            </p>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Customization: Design programs tailored to the workforce’s preferences and demographics.
+            </p>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Communication: Regularly share wellness updates and resources through newsletters or intranet portals.
+            </p>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Involvement: Encourage leadership to champion wellness initiatives for greater employee participation.
+            </p>
+            <h1 style="font-size: 24px; font-weight: bold;">Conclusion:            </h1>
+            <p style="font-size: 14px; line-height: 1.6;">
+                An Employee Wellness Policy is a win-win for both employers and employees. It fosters a supportive environment where employees can thrive, leading to increased engagement, productivity, and loyalty. By prioritizing wellness, organizations pave the way for a healthier, happier workforce and a more successful future.
+            </p>
+        </div>
+    </div>
+        <br>
+ <!-- Footer -->
+ <footer class="text-center text-lg-start bg-body-tertiary text-muted mt-4">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Fit Sphere
+            </h6>
+            <p>
+              we're dedicated to helping you achieve your health and wellness goals.<br>
+              From personalized workout plans and nutritional guidance to fitness tips<br>
+              and motivational resources, we provide everything you need to lead an active,<br>
+              balanced lifestyle. Whether you're a beginner or an experienced athlete, our community<br>
+              and expert trainers are here to support your journey to a stronger, healthier you.<br>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="./BMI calculator/index.html" class="text-reset">BMI Calculator</a>
+            </p>
+            <p>
+              <a href="./Diet/diet.html" class="text-reset">Diet</a>
+            </p>
+            <p>
+              <a href="./Health/health.html" class="text-reset">Health</a>
+            </p>
+            <p>
+              <a href="./Workout/workout.html" class="text-reset">Workout</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact us on Email & Phone No.</h6>
+            <p><i class="fas fa-home me-3"></i> prajapatitushar9720@gmail.com</p>
+            <p><i class="fas fa-home me-3"></i> yashvich.77@gmail.com</p>
+            <p><i class="fas fa-home me-3"></i> prajapatitushar9720@gmail.com</p>
+            <p><i class="fas fa-phone me-3"></i> +918439679293</p>
+            <p><i class="fas fa-print me-3"></i> +919319935730</p>
+            <p><i class="fas fa-print me-3"></i> +919305051985</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2024 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">FitSphere</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</body>
+
+</html>

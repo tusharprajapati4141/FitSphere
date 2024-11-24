@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>workout</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        background-color: whitesmoke;
+    }
+    .navbar {
+        background: white;
+        font-family: calibri;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .navdiv {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo a {
+        font-size: 35px;
+        font-weight: 500;
+        color: black;
+        text-decoration: none;
+    }
+
+    li {
+        list-style: none;
+        display: inline-block;
+    }
+
+    li a {
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 25px;
+        text-decoration: none;
+        padding: 70px;
+    }
+
+    .content {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .content h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .content .author {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .content .author img {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .content .author .name {
+        font-weight: bold;
+    }
+
+    .content .author .date {
+        color: #888;
+        margin-left: 10px;
+    }
+
+    .content img.main-image {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .content p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .content .toc {
+        background-color: #f1f1f1;
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .content .toc h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .content .toc ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .content .toc ul li {
+        margin-bottom: 5px;
+    }
+
+    .content .toc ul li a {
+        font-size: 17px;
+        text-decoration: none;
+        color: #007bff;
+    }
+
+    .content h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        margin-top: 80px;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-4">
+        <img src="https://png.pngtree.com/png-vector/20240115/ourmid/pngtree-3d-body-builder-gym-logo-image-png-image_11437963.png" alt="Bootstrap" width="80" height="60">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">FitSphere</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../Diet/diet.html">Diet</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../weightloss/WeightLoss.html">WeightLoss</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../yoga/Yoga.html">Yoga</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Health/health.html">Health</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Workout/workout.html">Workout</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../BMI calculator/index.html">BMI Calculator</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+    <div class="content">
+        <h1>
+            Are These Signs of Menopause or Something Else?
+        </h1>
+        <div class="author">
+            <!-- <img alt="Author Image" height="40"
+                src="https://storage.googleapis.com/a1aa/image/7AuhKGiWffop0kRBNVuQRhYwOj6ZQIfBdod7mIpK5HX6aWZnA.jpg"
+                width="40" /> -->
+            <div class="name">
+                Aditi Shehnai
+            </div>
+            <div class="date">
+                April 23, 2024
+            </div>
+        </div>
+        <img alt="Health" class="main-image" height="400"
+            src="https://www.healthifyme.com/blog/wp-content/uploads/2024/04/Signs-of-menopause.jpg" width="800" />
+        <p>
+            In their middle age, many women encounter symptoms that could either herald the onset of menopause or signal other underlying health conditions. It is a period marked by uncertainty, where symptoms like hot flushes, night sweats, and mood swings become common. While these are traditionally viewed as signs of menopause, they can also be indicative of other health issues, making accurate diagnosis crucial.
+        </p>
+        <div class="toc">
+            <h2>
+                Table of Contents
+            </h2>
+            <a href="#diet">
+                1. Understanding Menopause: What It Means
+            </a>
+            <br>
+            <a href="#health">
+                2. Causes of Menopause
+            </a>
+            <br>
+            <a href="#3">
+                3. Signs and Symptoms of Menopause
+            </a>
+            <br>
+            <a href="#4">
+                4. Same Symptoms, Different Problems: Distinguishing Menopause from Other Conditions
+            </a>
+            <br>
+            <a href="#5">
+                5. The Final Word
+            </a>
+            <br>
+            <a href="#6">
+                6. Research Sources
+            </a>
+        </div>
+
+        <br>
+
+        <p style="font-size: 14px; line-height: 1.6;">
+            Menopause, the natural decline in reproductive hormones when a woman reaches her 40s or 50s, presents a variety of symptoms. Sometimes, these symptoms overlap with thyroid disorders, sleep apnea, or even collagen vascular diseases. It can lead to confusion and anxiety about one’s health. The challenge lies in recognising these symptoms and understanding their root causes. Women must know that while menopause is a normal stage of life, some symptoms might point to more severe conditions that require medical attention.
+        </p>
+
+        <p style="font-size: 14px; line-height: 1.6;">
+            This article helps you understand the symptoms associated with menopause, distinguishing them from those of other medical conditions. By providing clarity, this article will empower women to make informed decisions about their health and encourage them to seek guidance when symptoms align more closely with conditions other than menopause. 
+        </p>
+
+        <br>
+
+        <div id="diet">
+            <h1 style="font-size: 24px; font-weight: bold;">Understanding Menopause: What It Means</h1>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Menopause marks a significant phase in a woman’s life. It is not just about ending menstruation but also a transition reflecting changes in reproductive hormones. Medically, menopause occurs when a woman has not experienced a menstrual period for 12 consecutive months. It typically happens between the ages of 45 and 55, but the timing can vary widely. Menopause signifies the end of a woman’s natural reproductive years, governed by the cyclical rise and fall of oestrogen and progesterone.
+            </p>
+
+            <p style="font-size: 14px; line-height: 1.6;">
+                The stage leading up to menopause, where symptoms start to appear due to fluctuating hormone levels, is known as perimenopause. This period can last anywhere from a few months to several years. During perimenopause, women may experience symptoms such as irregular periods, hot flushes, night sweats, and emotional changes, which all reflect the body’s adjustment to decreasing levels of ovarian hormones. It is crucial to understand that while menopause is a natural biological process, the transition can have a variety of manifestations. It influences each woman uniquely based on her body’s response to these hormonal adjustments.
+            </p>
+
+            <h2 style="font-size: 18px; font-weight: bold; margin-top: 20px;">Summary</h2>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Menopause is a natural biological process signifying the cessation of menstrual cycles due to the end of reproductive hormone production by the ovaries. It is diagnosed after a woman has gone without menstruation for 12 consecutive months, typically occurring between 45 and 55 years of age. Understanding and identifying the signs of menopause, as well as the preceding perimenopausal phase, is crucial for managing this transition effectively and maintaining quality of life.
+            </p>
+        </div>
+
+        <br>
+
+        <div id="health">
+            <h1 style="font-size: 24px; font-weight: bold;">Causes of Menopause</h1>
+            <p style="font-size: 14px; line-height: 1.6;">The fundamental cause of menopause is the ageing of the ovaries, which leads to decreased production of reproductive hormones, particularly oestrogen and progesterone. As women age, the number of functional ovarian follicles diminishes, reducing the ovaries’ ability to produce these hormones and release eggs. It eventually leads to the cessation of menstruation.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Hormonal Decline</h2>
+            <p style="font-size: 14px; line-height: 1.6;">The most direct cause of menopause is the gradual decline in the level of oestrogen and progesterone produced by the ovaries. This change disrupts the regular menstrual cycle and eventually leads to its end. Oestrogen is crucial for regulating the menstrual cycle and is also essential for the health of various bodily systems, including the cardiovascular and skeletal systems. The decrease in oestrogen levels is responsible for many of the symptoms associated with menopause, such as hot flushes, night sweats, mood swings, and vaginal dryness.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Ovarian Ageing</h2>
+            <p style="font-size: 14px; line-height: 1.6;">From birth, females possess a finite number of eggs stored in their ovaries. Over time, these eggs are either released during the menstrual cycle or deteriorate through a process known as atresia. As a woman approaches her late 30s, the rate of atresia increases, leading to a more rapid decline in the number of available eggs. This reduction in egg count is accompanied by a decrease in ovarian hormone production, propelling the body toward menopause.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Other Influencing Factors
+            </h2>
+            <p style="font-size: 14px; line-height: 1.6;">While menopause is primarily a natural biological process, certain medical treatments and conditions can induce or accelerate it. Treatments such as chemotherapy, radiation therapy, and surgeries like hysterectomy or oophorectomy can impact hormone levels and ovarian function. It potentially leads to an earlier onset of menopause. Additionally, certain autoimmune conditions or genetic factors may predispose women to experience earlier menopause.</p>
+
+            <h2 style="font-size: 18px; font-weight: bold; margin-top: 20px;">Summary</h2>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Menopause occurs as a natural part of ageing due to the depletion of ovarian eggs and the consequent decline in reproductive hormone production, specifically oestrogen and progesterone. Genetic factors, medical treatments, and overall health can influence this process. Understanding these causes is crucial for managing menopausal symptoms effectively and maintaining health during the transitional period.
+            </p>
+        </div>
+
+        <br>
+
+        <div id="3">
+            <h1 style="font-size: 24px; font-weight: bold;">Signs and Symptoms of Menopause</h1>
+            <p style="font-size: 14px; line-height: 1.6;">Menopause is the end of menstrual cycles, but the transition, known as perimenopause, can bring about a range of symptoms due to fluctuating hormone levels. These changes affect various aspects of health and well-being, making it essential to understand and recognise them accurately.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Vasomotor Symptoms</h2>
+            <p style="font-size: 14px; line-height: 1.6;">One of the most commonly reported signs of menopause is vasomotor instability, which includes hot flushes, night sweats, and flushes. These symptoms result from the body’s response to decreased oestrogen levels. Hot flushes may manifest as sudden warmth, typically concentrated in the upper body, followed by sweating and sometimes chills. While these episodes can vary in frequency and intensity, they significantly impact daily life and sleep patterns.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Vaginal and Urological Changes</h2>
+            <p style="font-size: 14px; line-height: 1.6;">Menopause can significantly affect vaginal health. Decreases in oestrogen levels lead to vaginal dryness, thinning of vaginal tissues, and discomfort during intercourse. These changes also increase susceptibility to urinary infections and incontinence, as the tissues of the urethra also undergo similar changes.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Neurological and Cognitive Effects</h2>
+            <p style="font-size: 14px; line-height: 1.6;">Many women report changes in brain function during menopause, including difficulties with memory, focus, and processing speed. Sleep disturbances, such as insomnia or disrupted sleep due to night sweats, further contribute to daytime fatigue and cognitive difficulties. These symptoms can have a profound impact on quality of life, affecting mood, job performance, and interpersonal relationships.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Psychological Impact</h2>
+            <p style="font-size: 14px; line-height: 1.6;">The hormonal fluctuations of menopause can also lead to emotional changes. Many women experience mood swings, irritability, anxiety, and even depression during this transition. These psychological symptoms are often compounded by sleep issues and stress related to other menopausal changes.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Physical Changes</h2>
+            <p style="font-size: 14px; line-height: 1.6;">Beyond the more noticeable symptoms, menopause can also lead to more subtle systemic changes. Women may notice an increase in abdominal fat and changes in metabolism, which can contribute to weight gain. Additionally, decreased oestrogen levels are linked to lower bone density, increasing the risk of osteoporosis and fractures.</p>
+
+            <h2 style="font-size: 18px; font-weight: bold; margin-top: 20px;">Summary</h2>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Menopause is marked by a variety of symptoms influenced by hormonal fluctuations, including vasomotor instability like hot flushes and night sweats, vaginal and urological changes such as dryness and incontinence, and cognitive effects like memory lapses and sleep disturbances. Psychological impacts such as mood swings and depression are common. Furthermore, physical changes, like increased abdominal fat and decreased bone density, are also common. Recognising these symptoms is crucial for managing menopause effectively and distinguishing it from other health conditions.
+            </p>
+        </div>
+
+        <br>
+
+        <div id="4">
+            <h1 style="font-size: 24px; font-weight: bold;">Same Symptoms, Different Problems: Distinguishing Menopause from Other Conditions
+            </h1>
+            <p style="font-size: 14px; line-height: 1.6;">Menopause often presents with symptoms that can easily be mistaken for other medical conditions. This overlap can lead to misdiagnosis or delayed treatment for underlying issues that require different management strategies. It is crucial to differentiate between menopausal symptoms and those of other conditions to ensure appropriate care. Here, we explore several conditions that share symptoms with menopause and how to distinguish them.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Thyroid and Menopause</h2>
+            <p style="font-size: 14px; line-height: 1.6;">Both hyperthyroidism and menopause can cause increased sweating, heart palpitations, and menstrual irregularities. Hyperthyroidism, a condition where the thyroid gland is overactive, produces excess hormones that can mimic the hot flushes of menopause. </p>
+            <p style="font-size: 14px; line-height: 1.6;">Unlike menopause, hyperthyroidism might also cause weight loss, rapid heartbeat, and increased appetite. A simple blood test measuring thyroid-stimulating hormone (TSH) levels can confirm or rule out hyperthyroidism.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Menopause and Sleep Apnea</h2>
+            <p style="font-size: 14px; line-height: 1.6;">Sleep disturbances are common in menopausal women and are often attributed to night sweats. However, if symptoms include loud snoring, choking or gasping during sleep, and excessive daytime fatigue, sleep apnea might be the culprit. This condition is significant for its impact on sleep quality and also because it is linked to cardiovascular diseases. Sleep studies are essential for diagnosing sleep apnea, distinguishing it from the sleep disturbances of menopause.</p>
+            <p style="font-size: 14px; line-height: 1.6;">It supports the management of weight-induced sleep apnea through customised fitness programs that promote weight loss, which is a crucial factor in alleviating sleep apnea symptoms. Excess body weight can be a challenging and overwhelming issue, causing a plethora of health complications, including sleep apnea. We understand that embarking on a weight loss journey can be daunting, but we’re here to support you every step of the way. At HealthifyMe, we offer a smart weight loss plan that includes two skilled and dedicated coaches who will provide you with the guidance and support you need. Our coaches are compassionate and sympathetic and will take into account your food preferences to create custom diet plans that work for you. They will also design flexible workout routines that fit your lifestyle so you can achieve your goals without feeling overwhelmed. Additionally, as a bonus, you’ll receive a smart scale that tracks all your metabolic indicators. Keeping track of these health indicators will help you transform your weight loss journey into a comprehensive, holistic, and transformative experience. </p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Collagen Vascular Disease Confusion</h2>
+            <p style="font-size: 14px; line-height: 1.6;">Symptoms like fatigue, joint pain, and general malaise are common in menopause. However, these symptoms are also prevalent in collagen vascular diseases such as lupus and rheumatoid arthritis. These autoimmune disorders affect the connective tissues and can lead to systemic symptoms that mimic menopause. Blood tests that look for specific antibodies can help differentiate these conditions from menopausal symptoms.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Cancer’s Covert Symptoms</h2>
+            <p style="font-size: 14px; line-height: 1.6;">Certain cancers, such as lymphomas, might present with night sweats, unexplained weight loss, and changes in menstrual cycles. People also observe these symptoms in menopause. The presence of additional signs like swelling of lymph nodes, persistent fatigue, and unexplained fevers should prompt further investigation with imaging studies and possibly a biopsy to exclude malignancies.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">The Pregnancy Possibility</h2>
+            <p style="font-size: 14px; line-height: 1.6;">It is important to remember that women in perimenopause can still conceive. Symptoms like missed periods and hot flushes could mistakenly be attributed to menopause when a pregnancy could be the cause. A pregnancy test can easily clarify this condition, which is crucial for appropriate medical guidance and personal decision-making.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Mental Health Matters</h2>
+            <p style="font-size: 14px; line-height: 1.6;">Changes in mood and cognitive function are frequently attributed to menopause. However, they can also indicate serious mental health issues or even neurological conditions such as early-onset dementia. If symptoms of depression, anxiety, or cognitive changes are severe, persist beyond typical menopausal transition, or significantly impact daily functioning, one should evaluate them more comprehensively.</p>
+
+            <h2 style="font-size: 18px; font-weight: bold; margin-top: 20px;">Summary</h2>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Some symptoms commonly attributed to menopause might also indicate other serious health issues, necessitating careful differentiation. Conditions such as hyperthyroidism, sleep apnea, and various autoimmune diseases can mimic menopausal symptoms like hot flushes, sleep disruptions, and mood changes. Moreover, potential overlap with symptoms of conditions like cancer or mental health issues highlights the importance of thorough medical evaluation to ensure accurate diagnosis and treatment.
+            </p>
+        </div>
+
+        <div id="5">
+            <h1 style="font-size: 24px; font-weight: bold;">The Final Word</h1>
+            <p style="font-size: 14px; line-height: 1.6;">Understanding menopause and its mimicry by various health conditions is both challenging and essential. Understanding the nuances between typical menopausal symptoms and those caused by other health issues, such as thyroid disorders or sleep apnea, is crucial for receiving the correct diagnosis and care. </p>
+
+            <p style="font-size: 14px; line-height: 1.6;">Remember, one should not dismiss any symptom as merely a sign of ageing. Effective management and accurate diagnosis can significantly improve one’s quality of life during this transition. With HealthifyMe’s tailored health strategies and comprehensive care, women are not alone in this journey—they have a reliable ally to support them through these complex changes, ensuring that each step towards wellness is informed and personalised.</p>
+
+            <p style="font-size: 14px; line-height: 1.6;">Disclaimer: The purpose of this article is just to disperse knowledge and raise awareness. It does not intend to replace medical advice from professionals.</p>
+        </div>
+
+        <div id="6">
+            <h1 style="font-size: 24px; font-weight: bold;">Research Sources</h1>
+            <p style="font-size: 14px; line-height: 1.6;">
+                <a href="https://www.nia.nih.gov/health/menopause/what-menopause"><b>1. </b>What Is Menopause?</a>
+                <br>
+                <a href="https://www.womenshealth.gov/menopause"><b>2. </b>Menopause</a>
+                <br>
+                <a href="https://www.sciencedirect.com/science/article/abs/pii/S0889854511000702?via%3Dihub"><b>3. </b>Vasomotor Symptoms and Menopause: Findings from the Study of Women’s Health across the Nation</a>
+                <br>
+                <a href="https://www.nichd.nih.gov/health/topics/menopause/conditioninfo/symptoms"><b>4. </b>What are the symptoms of menopause?</a>
+                <br>
+                <a href="https://www.womenshealth.gov/menopause/menopause-symptoms-and-relief"><b>5. </b>Menopause symptoms and relief</a>
+                <br>
+            </p>
+        </div>
+
+    </div>
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted mt-4">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Fit Sphere
+            </h6>
+            <p>
+              we're dedicated to helping you achieve your health and wellness goals.<br>
+              From personalized workout plans and nutritional guidance to fitness tips<br>
+              and motivational resources, we provide everything you need to lead an active,<br>
+              balanced lifestyle. Whether you're a beginner or an experienced athlete, our community<br>
+              and expert trainers are here to support your journey to a stronger, healthier you.<br>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="../BMI calculator/index.html" class="text-reset">BMI Calculator</a>
+            </p>
+            <p>
+              <a href="../Diet/diet.html" class="text-reset">Diet</a>
+            </p>
+            <p>
+              <a href="../Health/health.html" class="text-reset">Health</a>
+            </p>
+            <p>
+              <a href="../Workout/workout.html" class="text-reset">Workout</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact us on Email & Phone No.</h6>
+            <p><i class="fas fa-home me-3"></i> prajapatitushar9720@gmail.com</p>
+            <p><i class="fas fa-home me-3"></i> yashvich.77@gmail.com</p>
+            <p><i class="fas fa-home me-3"></i> prajapatitushar9720@gmail.com</p>
+            <p><i class="fas fa-phone me-3"></i> +918439679293</p>
+            <p><i class="fas fa-print me-3"></i> +919319935730</p>
+            <p><i class="fas fa-print me-3"></i> +919305051985</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2024 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">FitSphere</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</body>
+
+</html>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>workout</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: whitesmoke;
+    }
+    .navbar {
+        background: white;
+        font-family: calibri;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .navdiv {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo a {
+        font-size: 35px;
+        font-weight: 500;
+        color: black;
+        text-decoration: none;
+    }
+
+    li {
+        list-style: none;
+        display: inline-block;
+    }
+
+    li a {
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 25px;
+        text-decoration: none;
+        padding: 70px;
+    }
+
+    .content {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .content h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .content .author {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .content .author img {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .content .author .name {
+        font-weight: bold;
+    }
+
+    .content .author .date {
+        color: #888;
+        margin-left: 10px;
+    }
+
+    .content img.main-image {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .content p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .content .toc {
+        background-color: #f1f1f1;
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .content .toc h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .content .toc ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .content .toc ul li {
+        margin-bottom: 5px;
+    }
+
+    .content .toc ul li a {
+        font-size: 17px;
+        text-decoration: none;
+        color: #007bff;
+    }
+
+    .content h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        margin-top: 80px;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-4">
+        <img src="https://png.pngtree.com/png-vector/20240115/ourmid/pngtree-3d-body-builder-gym-logo-image-png-image_11437963.png" alt="Bootstrap" width="80" height="60">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">FitSphere</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../Diet/diet.html">Diet</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../weightloss/WeightLoss.html">WeightLoss</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../yoga/Yoga.html">Yoga</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Health/health.html">Health</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Workout/workout.html">Workout</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../BMI calculator/index.html">BMI Calculator</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="content">
+        <h1>
+            Healthy Ageing: Taking Control of Your Well-being
+        </h1>
+        <div class="author">
+            <!-- <img alt="Author Image" height="40"
+                src="https://storage.googleapis.com/a1aa/image/7AuhKGiWffop0kRBNVuQRhYwOj6ZQIfBdod7mIpK5HX6aWZnA.jpg"
+                width="40" /> -->
+            <div class="name">
+                Aditi Shehnai
+            </div>
+            <div class="date">
+                April 16, 2024
+            </div>
+        </div>
+        <img alt="Health" class="main-image" height="400"
+            src="https://www.healthifyme.com/blog/wp-content/uploads/2024/04/Healthy-Ageing.jpg" width="800" />
+        <p>
+            Healthy ageing is about sustaining functional ability and well-being as you age. One can achieve it by prioritising physical, social, emotional, and cognitive health. There is a common misconception that healthy ageing means being completely free from illness or weakness. However, effectively managing health conditions can minimise their impact on overall well-being. It is never too early to start considering healthy ageing habits.
+        </p>
+        <div class="toc">
+            <h2>
+                Table of Contents
+            </h2>
+            <a href="#diet">
+                1. What is Healthy Ageing?
+            </a>
+            <br>
+            <a href="#health">
+                2. Healthy Glucose Levels by Age
+            </a>
+            <br>
+            <a href="#3">
+                3. Healthy Blood Pressure Levels by Age
+            </a>
+            <br>
+            <a href="#4">
+                4.Healthy Cholesterol Level by Age
+            </a>
+            <br>
+            <a href="#5">
+                5. The Final Word
+            </a>
+            <br>
+            <a href="#6">
+                6. Research Sources
+            </a>
+        </div>
+
+        <br>
+
+        <p style="font-size: 14px; line-height: 1.6;">
+            Many factors affect healthy ageing. While genetics are beyond your control, maintaining a balanced lifestyle can influence factors such as blood pressure, cholesterol levels, body weight, and type 2 diabetes. Enhancing your well-being as you age requires considering various factors crucial for maintaining overall health and supporting a healthier ageing process. This article will explore factors like the healthy ranges for body weight, blood pressure, cholesterol, and glucose levels, taking into account your age and other essential factors.
+        </p>
+
+        <br>
+
+        <div id="diet">
+            <h1 style="font-size: 24px; font-weight: bold;">What is Healthy Ageing?</h1>
+            <p style="font-size: 14px; line-height: 1.6;">
+                The World Health Organization defines healthy ageing as developing and maintaining the ability to function well in older age, ensuring overall well-being. It includes meeting basic needs, learning, staying mobile, maintaining relationships, and contributing to society. WHO emphasises that functional ability in the healthy ageing process is shaped by both a person’s mental and physical capacities (intrinsic capacity) and their surrounding environment (environmental characteristics), such as their home, community, and society.
+            </p>
+
+            <p style="font-size: 14px; line-height: 1.6;">
+                There are two essential aspects of healthy ageing: diversity and inequity. While older adults may have different levels of mental and physical abilities, some 70-year-olds may be as capable as younger adults. This diversity emphasises the need for tailored care for healthy ageing. Furthermore, inequities influenced by factors such as genetics and environment can impact ageing experiences. Addressing these differences is crucial for promoting healthy ageing.
+            </p>
+
+            <h2 style="font-size: 18px; font-weight: bold; margin-top: 20px;">Summary</h2>
+            <p style="font-size: 14px; line-height: 1.6;">
+                According to the World Health Organization, healthy ageing means maintaining well-being in old age by staying active and engaged. It involves meeting basic needs, learning, staying mobile, maintaining relationships, and contributing to society. Both mental and physical abilities, as well as environmental factors like home and community, play a role. Diversity is important, as addressing differences, including genetic and environmental factors, is crucial for promoting healthy ageing for everyone.
+            </p>
+        </div>
+
+        <br>
+
+        <div id="health">
+            <h1 style="font-size: 24px; font-weight: bold;">Healthy Glucose Levels by Age</h1>
+            <p style="font-size: 14px; line-height: 1.6;">As you age, keeping your blood sugar levels within a healthy range becomes increasingly essential to prevent age-related health complications, such as type 2 diabetes. Fluctuations in blood sugar levels can trigger glycation, where excess sugar in the bloodstream binds to proteins like collagen and elastin. This process accelerates the ageing of skin tissues, leading to wrinkles, reduced elasticity, and dryness. Therefore, managing blood sugar is crucial for metabolic health and also for preserving skin vitality and overall well-being.</p>
+
+            <p style="font-size: 14px; line-height: 1.6;">Common causes of blood sugar spikes and fluctuations in adults include poor dietary choices, lack of physical activity, stress, inadequate sleep, and underlying medical conditions like insulin resistance. These factors can lead to increased blood glucose levels. Hence, they indirectly contribute to the risk of developing chronic conditions associated with ageing.</p>
+
+            <p style="font-size: 14px; line-height: 1.6;">To navigate these challenges, consulting with certified nutritionists, such as those available through HealthifyMe, can provide personalised dietary strategies. Continuous Glucose Monitoring (CGM) systems, like the HealthifyPro, offer real-time insights into how specific foods impact glucose levels, enabling more informed nutritional decisions and effective diabetes management.</p>
+
+            <p style="font-size: 14px; line-height: 1.6;">It’s time to take control of your diabetic journey and experience a better quality of life. By getting your CGM system today, you can healthify your diabetic journey and achieve your health goals. Whether you’re struggling with high or low blood sugar levels, CGM systems like HealthifyPro can help you understand your body’s response to different foods and activities and take appropriate action to manage your diabetes. Click the link below to get your CGM and Healthify your diabetic journey to a holistic, wholesome and transformative one.</p>                
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Monitoring Blood Sugar Levels
+            </h2>
+            <p style="font-size: 14px; line-height: 1.6;">Regular monitoring of blood sugar levels is essential to understand how well the body is managing glucose, to detect patterns and trends that may indicate the need for adjustments in diet, exercise, or medication, and to prevent the long-term complications of diabetes. </p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Standard Blood Sugar Values
+            </h2>
+            <p style="font-size: 14px; line-height: 1.6;">Blood sugar targets may vary by age, highlighting the importance of individualised health plans.</p>
+
+            <h2 style="font-size: 18px; font-weight: bold; margin-top: 20px;">Summary</h2>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Maintaining blood sugar levels is necessary for overall well-being, especially with age, to prevent diabetes complications and age-related issues like wrinkles and dry skin. For individuals aged 18-50, fasting blood sugar levels range from 70 to 99 mg/dL, while post-meal levels range from 70 to 140 mg/dL. For those aged 51-60, fasting levels range from 70 to 105 mg/dL, with post-meal levels ranging from 70 to 150 mg/dL. Lastly, for individuals aged 61-90, fasting blood sugar levels range from 70 to 115 mg/dL, and post-meal levels range from 70 to 160 mg/dL.
+            </p>
+        </div>
+
+        <br>
+
+        <div id="3">
+            <h1 style="font-size: 24px; font-weight: bold;">Healthy Blood Pressure Levels by Age</h1>
+            <p style="font-size: 14px; line-height: 1.6;">Knowing the normal blood pressure ranges for different ages helps spot any unhealthy patterns and potential risks, allowing for preventative measures to maintain heart health. Blood pressure changes naturally with age, especially during adulthood and later years. Understanding these changes can help you take better care of your heart health.</p>
+
+            <p style="font-size: 14px; line-height: 1.6;">As individuals age, their risk of developing high blood pressure, or hypertension, escalates. This increase is primarily due to the natural ageing process of the blood vessels. Over time, arteries can lose their elasticity, becoming stiffer and less flexible. Such changes in the vascular system cause the heart to work harder to pump blood throughout the body, subsequently elevating blood pressure levels. Persistent high blood pressure is a critical risk factor for cardiovascular diseases, notably heart attacks and strokes. It places undue stress on the heart and arteries, leading to potential damage and increased risk of life-threatening conditions.</p>
+
+            <h2 style="font-size: 18px; font-weight: bold; margin-top: 20px;">Summary</h2>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Blood pressure naturally fluctuates with age, especially during adulthood and later years, and understanding these changes supports better heart care. Average adult blood pressure varies by age and gender, with men’s readings ranging from 119/70 mm Hg (18-39 years) to 133/69 mm Hg (60+ years) and women’s readings from 110/68 mm Hg (18-39 years) to 139/68 mm Hg (60+ years). Infants, toddlers, preschoolers, school-aged children, and adolescents have varying normal ranges as well.
+            </p>
+        </div>
+
+        <br>
+
+        <div id="4">
+            <h1 style="font-size: 24px; font-weight: bold;">Healthy Cholesterol Level by Age
+            </h1>
+            <p style="font-size: 14px; line-height: 1.6;">Cholesterol levels often increase with age, as ageing is a process influenced by various physiological changes. In the body, cholesterol is essential for forming cell membranes, certain hormones, and vitamin D. However, the balance between good (HDL) cholesterol and bad (LDL) cholesterol can shift unfavourably over time. This shift is partly due to reduced liver efficiency, changes in hormonal levels, and lifestyle factors like diet and physical activity.</p>
+
+            <p style="font-size: 14px; line-height: 1.6;">Men generally exhibit higher cholesterol levels throughout life, primarily because of hormonal differences and lifestyle factors. Testosterone, the predominant male hormone, is linked to lower levels of HDL cholesterol. Women, on the other hand, tend to have higher HDL levels due to oestrogen’s protective effects, which also help maintain lower LDL levels until menopause. Post-menopause, women’s cholesterol levels often rise, narrowing the gap between genders.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">The Importance of Regular Cholesterol Checks</h2>
+            <p style="font-size: 14px; line-height: 1.6;">Regular cholesterol screening is vital for everyone, including seemingly healthy individuals. For a 45-year-old individual with no apparent health issues, periodic checks every 4–6 years are recommended because cholesterol can accumulate silently, leading to clogged arteries without noticeable symptoms. Early detection allows for timely lifestyle adjustments or treatment to prevent complications like heart disease and stroke.</p>
+            <p style="font-size: 14px; line-height: 1.6;">Managing cholesterol can be a complex process that requires personalised guidance. HealthifyMe is an expert in this field, offering tailored nutrition and lifestyle plans to help you keep your cholesterol levels under control. We adapt our strategies to your changing needs and health goals. HealthifyMe’s Cholesterol Management Plan includes professional coaching, flexible workout plans, tailored diet plans, and a smart scale to track all of your metabolic health parameters. This proactive approach is crucial for maintaining cardiovascular health and ensuring long-term well-being.</p>
+
+            <h2 style="font-size: 18px; font-weight: bold; margin-top: 20px;">Summary</h2>
+            <p style="font-size: 14px; line-height: 1.6;">
+                In children and teens, borderline high total cholesterol levels range from 170–199 mg/dl, and borderline high LDL levels range from 100–129 mg/dl. In adults aged 20 and over, borderline high total cholesterol levels range from 200–239 mg/dl, and borderline high LDL levels range from 130–159 mg/dl. Levels above this are considered very high.
+            </p>
+        </div>
+
+        <div id="5">
+            <h1 style="font-size: 24px; font-weight: bold;">The Final Word</h1>
+            <p style="font-size: 14px; line-height: 1.6;">Maintaining control over key aspects of your well-being is vital for healthy ageing. It includes prioritising physical, social, emotional, and cognitive health throughout life. It is essential to debunk the misconception that healthy ageing means being entirely free from illness or weakness. Instead, effectively managing health conditions can significantly mitigate their impact on overall well-being.</p>
+
+            <p style="font-size: 14px; line-height: 1.6;">Remember, it is never too early to adopt habits that support healthy ageing. By focusing on factors like blood pressure, cholesterol levels, body weight, and glucose levels and seeking personalised guidance when needed, individuals can enhance their well-being and enjoy a healthy life as they age.</p>
+
+            <p style="font-size: 14px; line-height: 1.6;">Disclaimer: The purpose of this article is just to disperse knowledge and raise awareness. It does not intend to replace medical advice from professionals. </p>
+        </div>
+
+        <div id="6">
+            <h1 style="font-size: 24px; font-weight: bold;">Research Sources</h1>
+            <p style="font-size: 14px; line-height: 1.6;">
+                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7250103/"><b>1. </b>The World Health Organization’s (WHO) approach to healthy ageing</a>
+                <br>
+                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC1495473/"><b>2. </b>Blood Cholesterol Screening</a>
+                <br>
+                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4984841/"><b>3. </b>A Research Agenda: The Changing Relationship Between Body Weight and Health in Aging</a>
+                <br>
+            </p>
+        </div>
+
+    </div>
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted mt-4">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Fit Sphere
+            </h6>
+            <p>
+              we're dedicated to helping you achieve your health and wellness goals.<br>
+              From personalized workout plans and nutritional guidance to fitness tips<br>
+              and motivational resources, we provide everything you need to lead an active,<br>
+              balanced lifestyle. Whether you're a beginner or an experienced athlete, our community<br>
+              and expert trainers are here to support your journey to a stronger, healthier you.<br>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="../BMI calculator/index.html" class="text-reset">BMI Calculator</a>
+            </p>
+            <p>
+              <a href="../Diet/diet.html" class="text-reset">Diet</a>
+            </p>
+            <p>
+              <a href="../Health/health.html" class="text-reset">Health</a>
+            </p>
+            <p>
+              <a href="../Workout/workout.html" class="text-reset">Workout</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact us on Email & Phone No.</h6>
+            <p><i class="fas fa-home me-3"></i> prajapatitushar9720@gmail.com</p>
+            <p><i class="fas fa-home me-3"></i> yashvich.77@gmail.com</p>
+            <p><i class="fas fa-home me-3"></i> prajapatitushar9720@gmail.com</p>
+            <p><i class="fas fa-phone me-3"></i> +918439679293</p>
+            <p><i class="fas fa-print me-3"></i> +919319935730</p>
+            <p><i class="fas fa-print me-3"></i> +919305051985</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2024 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">FitSphere</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</body>
+
+</html>

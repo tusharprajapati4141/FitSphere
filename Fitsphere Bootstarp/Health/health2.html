@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>workout</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: whitesmoke;
+    }
+  .navbar {
+        background: white;
+        font-family: calibri;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .navdiv {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo a {
+        font-size: 35px;
+        font-weight: 500;
+        color: black;
+        text-decoration: none;
+    }
+
+    li {
+        list-style: none;
+        display: inline-block;
+    }
+
+    li a {
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 25px;
+        text-decoration: none;
+        padding: 70px;
+    }
+
+    .content {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .content h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .content .author {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .content .author img {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .content .author .name {
+        font-weight: bold;
+    }
+
+    .content .author .date {
+        color: #888;
+        margin-left: 10px;
+    }
+
+    .content img.main-image {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .content p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .content .toc {
+        background-color: #f1f1f1;
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .content .toc h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .content .toc ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .content .toc ul li {
+        margin-bottom: 5px;
+    }
+
+    .content .toc ul li a {
+        font-size: 17px;
+        text-decoration: none;
+        color: #007bff;
+    }
+
+    .content h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        margin-top: 80px;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-4">
+        <img src="https://png.pngtree.com/png-vector/20240115/ourmid/pngtree-3d-body-builder-gym-logo-image-png-image_11437963.png" alt="Bootstrap" width="80" height="60">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">FitSphere</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../Diet/diet.html">Diet</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../weightloss/WeightLoss.html">WeightLoss</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../yoga/Yoga.html">Yoga</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Health/health.html">Health</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Workout/workout.html">Workout</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../BMI calculator/index.html">BMI Calculator</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="content">
+        <h1>
+            Orthorexia: Signs, Symptoms, and Solutions
+        </h1>
+        <div class="author">
+            <!-- <img alt="Author Image" height="40"
+                src="https://storage.googleapis.com/a1aa/image/7AuhKGiWffop0kRBNVuQRhYwOj6ZQIfBdod7mIpK5HX6aWZnA.jpg"
+                width="40" /> -->
+            <div class="name">
+                Nahida
+            </div>
+            <div class="date">
+                April 16, 2024
+            </div>
+        </div>
+        <img alt="Health" class="main-image" height="400"
+            src="https://www.healthifyme.com/blog/wp-content/uploads/2024/04/Orthorexia.jpg" width="800" />
+        <p>
+            Knowing how different foods affect your body can be good for your health. But when this interest becomes an obsession with only eating “healthy” or “clean” foods and feeling intense fear about eating anything labelled “junk” or “bad,” it is called orthorexia nervosa. Orthorexia is a pathological fixation on eating only “pure” or “clean” foods. So, with this condition, you might eat three meals a day, but you are too focused on healthy food and miss out on essential nutrients.
+        </p>
+        <div class="toc">
+            <h2>
+                Table of Contents
+            </h2>
+            <a href="#diet">
+                1. Orthorexia Meaning: Decoding The Disorder
+            </a>
+            <br>
+            <a href="#health">
+                2. Orthorexia vs. Anorexia
+            </a>
+            <br>
+            <a href="#3">
+                3. Stages of Orthorexia Development
+            </a>
+            <br>
+            <a href="#4">
+                4. Orthorexia Symptoms
+            </a>
+            <br>
+            <a href="#5">
+                5. The Final Word
+            </a>
+            <br>
+            <a href="#6">
+                6. Research Sources
+            </a>
+        </div>
+
+        <br>
+
+        <p style="font-size: 14px; line-height: 1.6;">
+            The rise of social media influencers and trendy diets frequently spotlighting “superfoods” and demonising entire food categories like fats or carbs fuel this obsession. Those with orthorexia may receive accolades for their seemingly disciplined health choices, yet behind the scenes, they face malnutrition risks inadvertently induced by their restrictive eating patterns.
+        </p>
+
+        <br>
+
+        <div id="diet">
+            <h1 style="font-size: 24px; font-weight: bold;">Orthorexia Meaning: Decoding The Disorder</h1>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Orthorexia nervosa is an intense preoccupation with healthy eating to the extent that it begins to disrupt daily life. Individuals with this disorder might limit their diet to a narrow range of foods deemed ‘pure’, like organic vegetables, excluding other vital food groups. This rigorous approach disrupts social meals and prevents the body from getting comprehensive nutrition, potentially leading to serious health repercussions.
+            </p>
+
+            <p style="font-size: 14px; line-height: 1.6;">
+                Though not officially classified in the Diagnostic and Statistical Manual for Mental Disorders (DSM), orthorexia shares traits with recognised eating disorders. It can be a gateway to conditions like anorexia nervosa. Like other eating disorders, orthorexia nervosa is not a choice but develops from an unhealthy relationship with food. Many people feel pressured to fit into societal body image and health status, leading to strict diets and obsessions with healthy eating.
+            </p>
+
+            <h2 style="font-size: 18px; font-weight: bold; margin-top: 20px;">Summary</h2>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Orthorexia nervosa is the extreme preoccupation with consuming only ‘pure’ or ‘clean’ foods, often leading to the exclusion of essential nutrients, negatively impacting overall health. Not officially recognised as an eating disorder in the DSM, it still presents significant risks, potentially evolving into more severe eating disorders if not addressed.
+            </p>
+        </div>
+
+        <br>
+
+        <div id="health">
+            <h1 style="font-size: 24px; font-weight: bold;">Orthorexia vs. Anorexia</h1>
+            <p style="font-size: 14px; line-height: 1.6;">While orthorexia nervosa and anorexia nervosa both stem from the Greek word “rexia,” meaning “hunger,” their paths diverge drastically. “Ana” signifies “without,” reflecting anorexia’s hallmark of avoiding food intake, whereas “ortho” translates to “right,” portraying orthorexia’s pursuit of consuming what is deemed ‘correct’ or ‘pure’ food.</p>
+
+            <h2 style="font-size: 18px; font-weight: bold; margin-top: 20px;">Summary</h2>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Orthorexia and anorexia, both characterised by the term “rexia,” hunger, display divergent motivations and manifestations. Anorexia focuses on weight control through food avoidance, while orthorexia obsesses over the healthfulness of food. Despite their differences, both disorders can lead to severe health and social consequences, underlining the importance of recognising and addressing these conditions.
+            </p>
+        </div>
+
+        <br>
+
+        <div id="3">
+            <h1 style="font-size: 24px; font-weight: bold;">Stages of Orthorexia Development</h1>
+            <p style="font-size: 14px; line-height: 1.6;">Orthorexia typically unfolds in two distinct stages:</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Belief Formation</h2>
+            <p style="font-size: 14px; line-height: 1.6;">Initially, individuals adopt a belief system valuing certain dietary practices as superior, often influenced by trends like clean eating, paleo, or vegan diets. While aiming for health, these rigid food philosophies can inadvertently lead to the exclusion of essential nutrients.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Obsessive Behaviour</h2>
+            <p style="font-size: 14px; line-height: 1.6;">The second stage is marked by an intense preoccupation with food choices, meal planning, and food preparation, striving for an ideal of purity and perfection in the diet. This obsession can result in self-imposed food rules, with deviations leading to feelings of guilt and subsequent detoxes or cleanses, which pose their own health risks.</p>
+            <p style="font-size: 14px; line-height: 1.6;">Understanding these stages helps in recognising the progression of orthorexia and the importance of addressing its underlying issues before they escalate.</p>
+
+            <h2 style="font-size: 18px; font-weight: bold; margin-top: 20px;">Summary</h2>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Orthorexia evolves in two stages: the adoption of rigid dietary beliefs and the escalation into obsessive, rule-bound eating behaviour. Recognising these patterns is crucial for seeking timely intervention and fostering a healthier relationship with food.
+            </p>
+        </div>
+
+        <br>
+
+        <div id="4">
+            <h1 style="font-size: 24px; font-weight: bold;">Orthorexia Symptoms
+            </h1>
+            <p style="font-size: 14px; line-height: 1.6;">While orthorexia nervosa lacks formal diagnostic criteria, its hallmark signs are hard to ignore. Central to this disorder is a stringent pursuit of dietary perfectionism, often leading to a compulsive need for control over food quality and purity. Additional signs and symptoms, according to the National Eating Disorders Association (NEDA), may include:</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Obsession with Food Quality</h2>
+            <p style="font-size: 14px; line-height: 1.6;">Those with orthorexia fixate on consuming only what they consider ‘pure’ foods—organic, unprocessed, farm-fresh, and often raw or vegan. Their concern is less about quantity and more about the perceived cleanliness of their diet.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Cutting Out Entire Food Groups</h2>
+            <p style="font-size: 14px; line-height: 1.6;">People with orthorexia tend to be extremely strict about what they eat. They avoid anything they see as “bad” or “unhealthy.” For instance, they often cut out entire food groups, such as processed foods, sugar, meat, dairy products, carbohydrates, and gluten.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Emotional Turmoil When Breaking Dietary Rules</h2>
+            <p style="font-size: 14px; line-height: 1.6;">Deviating from their strict dietary rules triggers intense emotional responses such as anxiety, shame, and guilt. It highlights the deep psychological impact of the disorder.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Anxiety Around Specific Foods</h2>
+            <p style="font-size: 14px; line-height: 1.6;">Individuals with orthorexia often feel a strong urge to distance themselves from foods they consider forbidden. They might feel very uneasy or even leave a room if they see that food. A common behaviour pattern is skipping social gatherings to avoid encountering their “fear foods,” which can intensify the obsessive thoughts.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Weight Loss</h2>
+            <p style="font-size: 14px; line-height: 1.6;">An orthorexic diet is often unbalanced, leading to malnutrition. By believing that avoiding certain foods will improve health, people with orthorexia may unintentionally lower their nutrition levels by severely limiting food variety. This weight loss is typically not intentional. </p>
+            <p style="font-size: 14px; line-height: 1.6;">As we delve deeper into understanding orthorexia, it becomes clear that recognising these symptoms is the first step toward addressing the disorder. Let us not take you through a self-assessment to help identify if you or someone you know may be experiencing these signs.</p>
+
+            <h2 style="font-size: 18px; font-weight: bold; margin-top: 20px;">Summary</h2>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Orthorexia, characterised by an excessive focus on eating ‘pure’ foods, leads to significant nutritional and emotional consequences. Key indicators include an obsession with food quality, strict avoidance of certain food groups, emotional distress over dietary deviations, fear of specific foods, and unintentional weight loss. Recognising these symptoms is crucial for addressing the disorder and fostering healthier eating habits.
+            </p>
+        </div>
+
+        <div id="5">
+            <h1 style="font-size: 24px; font-weight: bold;">The Final Word</h1>
+            <p style="font-size: 14px; line-height: 1.6;">In the journey towards optimal health in a world saturated with social media’s filtered views on diet and fitness, the line between healthy eating and orthorexia can blur. The allure of ‘eating clean’ and following the perfect diet, often amplified by influencers and wellness gurus, can lead to a dangerous obsession with food purity. While orthorexia is not yet recognised officially in medical diagnostics, its impact is real and parallels other eating disorders, risking severe health and emotional well-being.</p>
+
+            <p style="font-size: 14px; line-height: 1.6;">The good news? Recovery is within reach. Integrating cognitive-behavioural therapy, enriched with HealthifyMe’s personalised nutrition plans, offers a pathway to healing. The HealthifyMe app educates and also provides practical tools for maintaining a balanced diet free from the constraints of orthorexia. HealthifyMe’s ecosystem, with its blend of technology and expert guidance, helps you navigate the complex terrain of eating habits. The support of expert nutritionists enables you to steer away from the extremes and towards sustainable health practices.</p>
+
+            <p style="font-size: 14px; line-height: 1.6;">In conclusion, while the digital age brings health and wellness information to your fingertips, it is crucial to approach this wealth of data with discernment. So, strive for a balanced lifestyle where nourishment and pleasure coexist on your plates and where apps like HealthifyMe empower you to make informed, healthy choices without falling prey to the perfection trap of orthorexia.</p>
+
+            <p style="font-size: 14px; line-height: 1.6;">Disclaimer: The purpose of this article is just to disperse knowledge and raise awareness. It does not intend to replace medical advice from professionals.</p>
+        </div>
+
+        <div id="6">
+            <h1 style="font-size: 24px; font-weight: bold;">Research Sources</h1>
+            <p style="font-size: 14px; line-height: 1.6;">
+                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10622118/#:~:text=The%20overall%20proportion%20of%20orthorexia%20nervosa%20symptoms%20(using%20the%20cutoff,%2C%20I2%20%3D%2093.1%25)."><b>1. </b>Overall proportion of orthorexia nervosa symptoms: A systematic review and meta-analysis including 30 476 individuals from 18 countries</a>
+                <br>
+                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6370446/"><b>2. </b>Orthorexia Nervosa: An Obsession With Healthy Eating</a>
+                <br>
+                <a href="https://www.researchgate.net/publication/266008463_Orthorexia_nervosa_-_An_eating_disorder_obsessive-compulsive_disorder_or_disturbed_eating_habit"><b>3. </b>Orthorexia nervosa – An eating disorder, obsessive-compulsive disorder or disturbed eating habit?</a>
+                <br>
+            </p>
+        </div>
+
+    </div>
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted mt-4">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Fit Sphere
+            </h6>
+            <p>
+              we're dedicated to helping you achieve your health and wellness goals.<br>
+              From personalized workout plans and nutritional guidance to fitness tips<br>
+              and motivational resources, we provide everything you need to lead an active,<br>
+              balanced lifestyle. Whether you're a beginner or an experienced athlete, our community<br>
+              and expert trainers are here to support your journey to a stronger, healthier you.<br>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="../BMI calculator/index.html" class="text-reset">BMI Calculator</a>
+            </p>
+            <p>
+              <a href="../Diet/diet.html" class="text-reset">Diet</a>
+            </p>
+            <p>
+              <a href="../Health/health.html" class="text-reset">Health</a>
+            </p>
+            <p>
+              <a href="../Workout/workout.html" class="text-reset">Workout</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact us on Email & Phone No.</h6>
+            <p><i class="fas fa-home me-3"></i> prajapatitushar9720@gmail.com</p>
+            <p><i class="fas fa-home me-3"></i> yashvich.77@gmail.com</p>
+            <p><i class="fas fa-home me-3"></i> prajapatitushar9720@gmail.com</p>
+            <p><i class="fas fa-phone me-3"></i> +918439679293</p>
+            <p><i class="fas fa-print me-3"></i> +919319935730</p>
+            <p><i class="fas fa-print me-3"></i> +919305051985</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2024 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">FitSphere</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</body>
+
+</html>

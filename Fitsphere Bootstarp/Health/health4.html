@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>workout</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: whitesmoke;
+    }
+    .navbar {
+        background: white;
+        font-family: calibri;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .navdiv {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo a {
+        font-size: 35px;
+        font-weight: 500;
+        color: black;
+        text-decoration: none;
+    }
+
+    li {
+        list-style: none;
+        display: inline-block;
+    }
+
+    li a {
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 25px;
+        text-decoration: none;
+        padding: 70px;
+    }
+
+    .content {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .content h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .content .author {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .content .author img {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .content .author .name {
+        font-weight: bold;
+    }
+
+    .content .author .date {
+        color: #888;
+        margin-left: 10px;
+    }
+
+    .content img.main-image {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .content p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .content .toc {
+        background-color: #f1f1f1;
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .content .toc h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .content .toc ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .content .toc ul li {
+        margin-bottom: 5px;
+    }
+
+    .content .toc ul li a {
+        font-size: 17px;
+        text-decoration: none;
+        color: #007bff;
+    }
+
+    .content h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        margin-top: 80px;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-4">
+        <img src="https://png.pngtree.com/png-vector/20240115/ourmid/pngtree-3d-body-builder-gym-logo-image-png-image_11437963.png" alt="Bootstrap" width="80" height="60">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">FitSphere</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../Diet/diet.html">Diet</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../weightloss/WeightLoss.html">WeightLoss</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../yoga/Yoga.html">Yoga</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Health/health.html">Health</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Workout/workout.html">Workout</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../BMI calculator/index.html">BMI Calculator</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+    <div class="content">
+        <h1>
+            Why Do I Feel Hungry All the Time?
+        </h1>
+        <div class="author">
+            <!-- <img alt="Author Image" height="40"
+                src="https://storage.googleapis.com/a1aa/image/7AuhKGiWffop0kRBNVuQRhYwOj6ZQIfBdod7mIpK5HX6aWZnA.jpg"
+                width="40" /> -->
+            <div class="name">
+                Nahida
+            </div>
+            <div class="date">
+                March 22, 2024
+            </div>
+        </div>
+        <img alt="Health" class="main-image" height="400"
+            src="https://www.healthifyme.com/blog/wp-content/uploads/2024/03/shutterstock_754070890-1.jpg" width="800" />
+        <p>
+            The sensation of hunger is a natural signal from your body indicating the need for food. While most people can comfortably go several hours between meals without feeling hungry, exceptions exist. At times, hunger may strike even when there is no actual need for food or calories. In such instances, factors such as an inadequate diet, specific lifestyle habits, or medications can contribute to an unchecked increase in appetite. However, leptin resistance often emerges as a key causative factor.
+        </p>
+        <div class="toc">
+            <h2>
+                Table of Contents
+            </h2>
+            <a href="#diet">
+                1. The Role of Leptin and Ghrelin in Hunger
+            </a>
+            <br>
+            <a href="#health">
+                2. Leptin Resistance and Hunger
+            </a>
+            <br>
+            <a href="#3">
+                3. Causes of Leptin Resistance
+            </a>
+            <br>
+            <a href="#4">
+                4. Lifestyle Changes to Manage Leptin Resistance
+            </a>
+            <br>
+            <a href="#5">
+                5. The Final Word
+            </a>
+            <br>
+            <a href="#6">
+                6. Research Sources
+            </a>
+        </div>
+
+        <br>
+
+        <p style="font-size: 14px; line-height: 1.6;">
+            Leptin, a crucial hormone for appetite regulation, conveys feelings of satiety to the brain. However, resistance to its effects can disrupt this signal, causing hormonal imbalance and persistent feelings of hunger. The frequency of hunger also depends on the types of foods you consume, their impact on blood sugar, and the rate at which your body metabolises them.
+        </p>
+
+        <br>
+
+        <div id="diet">
+            <h1 style="font-size: 24px; font-weight: bold;">The Role of Leptin and Ghrelin in Hunger</h1>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Leptin, often called the “satiety hormone” or the “starvation hormone,” is crucial in appetite and energy regulation. Produced by your body’s fat cells, leptin travels through the bloodstream to the hypothalamus, the brain’s control centre for eating patterns. High leptin levels signify ample fat stores, prompting the hypothalamus to suppress appetite. It creates a sense of fullness and diminishes the urge to eat.
+            </p>
+
+            <p style="font-size: 14px; line-height: 1.6;">
+                Ghrelin, also known as the “hunger hormone” or Lenomorelin, is produced in the gut and primarily functions to stimulate appetite. It encourages increased food consumption, calorie intake, and fat storage. Higher ghrelin levels result in increased hunger, while lower levels promote a feeling of fullness.
+            </p>
+
+            <p style="font-size: 14px; line-height: 1.6;">
+                As you consume food and accumulate more body fat, leptin levels rise, signalling a sense of satiety. Conversely, during periods of fasting or reduced fat stores, leptin levels decrease, and ghrelin levels rise, indicating the need to eat and replenish energy reserves. This counteraction between leptin and ghrelin helps the body manage appetite and maintain energy balance.
+            </p>
+
+            <h2 style="font-size: 18px; font-weight: bold; margin-top: 20px;">Summary</h2>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Leptin and ghrelin work together for appetite regulation and energy balance. Leptin, produced by fat cells, signals fullness and satisfaction as body fat increases, promoting reduced appetite. Alternatively, ghrelin stimulates hunger before meals, signalling low energy reserves and the need to eat. This interplay helps the body maintain a balance between hunger and satiety, ensuring proper energy regulation.
+            </p>
+        </div>
+
+        <br>
+
+        <div id="health">
+            <h1 style="font-size: 24px; font-weight: bold;">Leptin Resistance and Hunger</h1>
+            <p style="font-size: 14px; line-height: 1.6;">Persistent hunger could be a result of leptin resistance, which is a hormonal imbalance. Leptin resistance interferes with the communication between fat cells and the brain. Usually, high leptin levels indicate to the brain that sufficient energy is stored, signalling a natural reduction in the urge to eat. However, in leptin resistance, the brain becomes less responsive or fails to recognise this signalling process. As a result, despite high leptin levels in the body, the brain may not acknowledge them, leading to ongoing feelings of hunger.</p>
+            <p style="font-size: 14px; line-height: 1.6;">When your brain fails to receive the leptin signal, it interprets it as if your body is in a state of starvation despite having ample energy stored. In response, your brain may alter your eating behaviour to regain body fat, leading to increased hunger or a reduction in energy levels to burn fewer calories at rest.</p>
+
+            <h2 style="font-size: 18px; font-weight: bold; margin-top: 20px;">Summary</h2>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Leptin resistance, a hormonal imbalance, disrupts communication between fat cells and the brain, affecting hunger signals. High leptin levels typically indicate sufficient energy storage, reducing the urge to eat. However, in resistance, the brain becomes less responsive, causing ongoing hunger despite high leptin levels. This lack of signalling may prompt altered eating behaviours, with the brain interpreting the body as starved, potentially increasing hunger.
+            </p>
+        </div>
+
+        <br>
+
+        <div id="3">
+            <h1 style="font-size: 24px; font-weight: bold;">Causes of Leptin Resistance</h1>
+            <p style="font-size: 14px; line-height: 1.6;">Leptin resistance and obesity are interconnected. When you are overweight, the more body fat you have, the higher your leptin levels go (hyperleptinemia). But having a lot of leptin can make your body less responsive to its signals, and that’s called leptin resistance. </p>
+
+            <p style="font-size: 14px; line-height: 1.6;">This lack of leptin sensitivity can lead to continued overeating, causing an accumulation of more body fat and contributing to obesity. While leptin resistance is a factor, it’s essential to understand that various factors, including genetics and lifestyle, also influence obesity.</p>
+
+            <h2 style="font-size: 18px; font-weight: bold; margin-top: 20px;">Summary</h2>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Leptin resistance and obesity go hand-in-hand. When overweight, higher body fat results in increased leptin levels (hyperleptinemia), leading to leptin resistance. This insensitivity contributes to persistent overeating, accumulating more body fat and fostering obesity. Factors like inflammation, elevated free fatty acids, and high leptin levels contribute to leptin resistance by disrupting signalling mechanisms.
+            </p>
+        </div>
+
+        <br>
+
+        <div id="4">
+            <h1 style="font-size: 24px; font-weight: bold;">Lifestyle Changes to Manage Leptin Resistance
+            </h1>
+            <p style="font-size: 14px; line-height: 1.6;">While medication can assist in managing leptin resistance, here are certain lifestyle changes that can be beneficial:</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Improve Sleep Cycle</h2>
+            <p style="font-size: 14px; line-height: 1.6;">Lack of sufficient sleep, poor sleep habits, and disrupted circadian rhythms increase the risk of leptin resistance. Therefore, improving leptin sensitivity is possible by ensuring adequate sleep.  </p>
+            <p style="font-size: 14px; line-height: 1.6;">To ensure sufficient sleep, establish a consistent bedtime before 10 pm and aim for 7-9 hours of quality rest. </p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Regular Exercise</h2>
+            <p style="font-size: 14px; line-height: 1.6;">Consistent exercise plays a crucial role in reducing body fat, maintaining a healthy weight, and lowering leptin levels. By incorporating regular workouts into your routine, you enhance the body’s capacity to regulate appetite, decrease abdominal obesity, and optimise metabolic health. </p>
+            <p style="font-size: 14px; line-height: 1.6;">Prioritise a mix of cardiovascular and strength training exercises for maximum benefits. HealthifyMe’s app can assist you in designing a personalised exercise plan, ensuring you meet your fitness goals and promote better weight management.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Supplements</h2>
+            <p style="font-size: 14px; line-height: 1.6;">Chinese cinnamon (Cinnamomum cassia) and Gymnema sylvestre are herbs that have the potential to regulate appetite by impacting leptin, glucose, and insulin levels. Incorporating these herbs into your diet, under guidance, may contribute to better appetite control and overall metabolic health. HealthifyMe’s nutrition experts can offer personalised advice on incorporating such herbs into your diet for holistic well-being.</p>
+
+            <h2 style="font-size: 18px; font-weight: bold; margin-top: 20px;">Summary</h2>
+            <p style="font-size: 14px; line-height: 1.6;">
+                While medication can be a valuable aid in managing leptin resistance, incorporating lifestyle changes is equally beneficial. Adopt an anti-inflammatory diet with fibre-rich foods, veggies, and lean proteins. Go gluten-free for better appetite control. Practice time-restricted eating and ensure 7-9 hours of quality sleep. Regular exercise helps manage weight and lower leptin levels.
+            </p>
+        </div>
+
+        <div id="5">
+            <h1 style="font-size: 24px; font-weight: bold;">The Final Word</h1>
+            <p style="font-size: 14px; line-height: 1.6;">Persistent hunger may arise from various factors, including hormonal imbalances like leptin resistance. Additionally, lifestyle-related factors such as inadequate sleep, poor nutrient balance, distracted eating, stress, and medication effects can also influence appetite. Achieving a balance in hunger signals is possible by actively tracking your food intake and activity levels through HealthifyMe’s calorie, sleep, and hydration trackers.</p>
+
+            <p style="font-size: 14px; line-height: 1.6;">To maintain a more balanced hunger, make adjustments to your diet and lifestyle, focusing on factors like the quantity, pace, and composition of your meals. A holistic approach, incorporating personalised meal plans and expert guidance, can help address these factors and promote better appetite management for overall well-being.</p>
+
+            <p style="font-size: 14px; line-height: 1.6;">Disclaimer: The purpose of this article is just to disperse knowledge and raise awareness. It does not intend to replace medical advice from professionals.</p>
+        </div>
+
+        <div id="6">
+            <h1 style="font-size: 24px; font-weight: bold;">Research Sources</h1>
+            <p style="font-size: 14px; line-height: 1.6;">
+                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6893721/"><b>1. </b>Leptin, Obesity, and Leptin Resistance: Where Are We 25 Years Later?</a>
+                <br>
+                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3763921/"><b>2. </b>The impact of sleep deprivation on food desire in the human brain</a>
+                <br>
+                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3607652/"><b>3. </b>Eating attentively: a systematic review and meta-analysis of the effect of food intake memory and awareness on eating</a>
+                <br>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/15534426/"><b>4. </b>Variability in energy expenditure and its components</a>
+                <br>
+                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8651558/"><b>5. </b>The Leptin System and Diet: A Mini Review of the Current Evidence</a>
+                <br>
+            </p>
+        </div>
+
+    </div>
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted mt-4">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Fit Sphere
+            </h6>
+            <p>
+              we're dedicated to helping you achieve your health and wellness goals.<br>
+              From personalized workout plans and nutritional guidance to fitness tips<br>
+              and motivational resources, we provide everything you need to lead an active,<br>
+              balanced lifestyle. Whether you're a beginner or an experienced athlete, our community<br>
+              and expert trainers are here to support your journey to a stronger, healthier you.<br>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="../BMI calculator/index.html" class="text-reset">BMI Calculator</a>
+            </p>
+            <p>
+              <a href="../Diet/diet.html" class="text-reset">Diet</a>
+            </p>
+            <p>
+              <a href="../Health/health.html" class="text-reset">Health</a>
+            </p>
+            <p>
+              <a href="../Workout/workout.html" class="text-reset">Workout</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact us on Email & Phone No.</h6>
+            <p><i class="fas fa-home me-3"></i> prajapatitushar9720@gmail.com</p>
+            <p><i class="fas fa-home me-3"></i> yashvich.77@gmail.com</p>
+            <p><i class="fas fa-home me-3"></i> prajapatitushar9720@gmail.com</p>
+            <p><i class="fas fa-phone me-3"></i> +918439679293</p>
+            <p><i class="fas fa-print me-3"></i> +919319935730</p>
+            <p><i class="fas fa-print me-3"></i> +919305051985</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2024 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">FitSphere</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</body>
+
+</html>

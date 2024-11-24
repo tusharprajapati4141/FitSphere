@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>workout</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: whitesmoke;
+    }
+    .navbar {
+        background: white;
+        font-family: calibri;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .navdiv {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo a {
+        font-size: 35px;
+        font-weight: 500;
+        color: black;
+        text-decoration: none;
+    }
+
+    li {
+        list-style: none;
+        display: inline-block;
+    }
+
+    li a {
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 25px;
+        text-decoration: none;
+        padding: 70px;
+    }
+
+    .content {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .content h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .content .author {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .content .author img {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .content .author .name {
+        font-weight: bold;
+    }
+
+    .content .author .date {
+        color: #888;
+        margin-left: 10px;
+    }
+
+    .content img.main-image {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .content p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .content .toc {
+        background-color: #f1f1f1;
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .content .toc h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .content .toc ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .content .toc ul li {
+        margin-bottom: 5px;
+    }
+
+    .content .toc ul li a {
+        font-size: 17px;
+        text-decoration: none;
+        color: #007bff;
+    }
+
+    .content h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        margin-top: 80px;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-4">
+        <img src="https://png.pngtree.com/png-vector/20240115/ourmid/pngtree-3d-body-builder-gym-logo-image-png-image_11437963.png" alt="Bootstrap" width="80" height="60">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">FitSphere</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../Diet/diet.html">Diet</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../weightloss/WeightLoss.html">WeightLoss</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../yoga/Yoga.html">Yoga</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Health/health.html">Health</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Workout/workout.html">Workout</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../BMI calculator/index.html">BMI Calculator</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="content">
+        <h1>
+            Science-backed Tips to Lose Belly Fat
+        </h1>
+        <div class="author">
+            <!-- <img alt="Author Image" height="40"
+                src="https://storage.googleapis.com/a1aa/image/7AuhKGiWffop0kRBNVuQRhYwOj6ZQIfBdod7mIpK5HX6aWZnA.jpg"
+                width="40" /> -->
+            <div class="name">
+                Nahida
+            </div>
+            <div class="date">
+                November 30, 2023
+            </div>
+        </div>
+        <img alt="Workout" class="main-image" height="400"
+            src="https://www.healthifyme.com/blog/wp-content/uploads/2023/11/shutterstock_2255528631-1.jpg" width="800" />
+        <p>
+            Belly fat refers to the extra weight around the middle section of the body. Usually, there are two forms of this fat. The first type is subcutaneous fat, which accounts for approximately 90% of the fat. The remaining 10% is visceral or intra-abdominal fat. This fat, which is located deep inside the abdomen and gathers around vital organs such as the pancreas, liver, and intestines, could potentially increase the risk of diseases like colorectal cancer, heart disease, and Type 2 diabetes. 
+        </p>
+        <div class="toc">
+            <h2>
+                Table of Contents
+            </h2>
+            <a href="#diet">
+                1. Tips to Lose Belly Fat
+
+            </a>
+            <br>
+            <a href="#health">
+                2. HealthifyMe Suggestion
+            </a>
+            <br>
+            <a href="#3">
+                3. The Final Word
+            </a>
+            <br>
+            <a href="#4">
+                4. Frequently Asked Questions
+            </a>
+            <br>
+            <a href="#5">
+                5. Research Sources
+            </a>
+            <br>
+        </div>
+
+        <br>
+
+        <p style="font-size: 14px; line-height: 1.6;">
+            A well-rounded diet paired with regular physical activity is necessary for significant weight reduction. While it is not possible to spot-reduce fat in specific areas of the body, there are ways to reduce overall body fat, thus reducing belly fat.
+        </p>
+
+        <br>
+
+        <div id="diet">
+            <h1 style="font-size: 24px; font-weight: bold;">Tips to Lose Belly Fat
+            </h1>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Portion Control
+            </h2>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Mindful eating or portion control is the first step towards healthy weight loss. Portioning the meals can help keep calorie consumption under control and lose weight. Pay close attention to the carbohydrates when adhering to portion control. It’s not necessary to adopt a low-carb eating plan, but cutting back on simple carbohydrates like fruit juice and sweets is a smart idea. Instead, go for sources of carbs such as whole grains, beans, and legumes, as well as vegetables. 
+            </p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Limit Unhealthy Beverages or Alcohol
+            </h2>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Avoid packaged fruit juices, sweetened beverages, and flavoured energy drinks. These juices may market themselves as healthy, but they are high in calories and simple sugar content. Consume whole fruits rather than store-bought juices to cut down calorie intake. 
+            </p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Include More Fibre
+            </h2>
+            <p style="font-size: 14px; line-height: 1.6;">
+                The numerous benefits of fibre are no secret. Fibre can make the digestive system strong and reduce bloating. There is research suggesting that fibre assists in managing weight, obesity, cholesterol, and blood sugar levels. For those who struggle to stick to a strict diet, simply increasing fibre consumption can result in weight loss. Make an effort to include 25 to 30 grams of fibre daily in the diet. 
+            </p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Engage in Cardio and Strength Training
+            </h2>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Exercise plays the chief role in weight loss, particularly in the reduction of belly fat. The best results will come from a combination of weight training and cardiovascular exercise. Start with 150 minutes of moderate-intensity aerobic activity or 75 minutes of vigorous exercise per week, plus two days of muscle-strengthening activities. 
+            </p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Quality Sleep
+            </h2>
+            <p style="font-size: 14px; line-height: 1.6;">
+                It is crucial to get a good amount of sleep every day. Studies show that insufficient sleep accumulates visceral fat in the body and leads to fat storage and weight gain. In adults under 40, getting less than five hours of sleep every night corresponds to a considerably greater buildup of visceral and subcutaneous fat.  
+            </p>
+
+            <h2 style="font-size: 18px; font-weight: bold; margin-top: 20px;">Summary</h2>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Controlling portion sizes, exercising, maintaining appropriate posture, getting enough sleep, staying hydrated, eliminating toxins using detox water, and eating a diet high in protein and fibre are some strategies for reducing belly fat. It is best to avoid fruit juices in packages, fizzy drinks, alcoholic beverages, sweetened beverages, and flavour-infused energy drinks since they are high in empty calories. Additionally, a few food items like eggs, avocados, oats, chia seeds, veggies, berries, lean protein, and green tea may aid in lowering total body fat, which in turn may lower belly fat. Probiotics, which include apple cider vinegar, can reduce weight and abdominal fat. The best forms of exercise to help weight loss include aerobic exercises that raise heart rate, such as walking, running, or swimming, and aerobic activity mixed with strength training if lowering total body fat, including belly fat, is the ultimate goal. 
+            </p>
+        </div>
+
+        <br>
+
+        <div id="health">
+            <h1 style="font-size: 24px; font-weight: bold;">HealthifyMe Suggestion
+                            </h1>
+            <p style="font-size: 14px; line-height: 1.6;">Have you heard of the term stress belly? Stress belly is the extra abdominal fat that accumulates as a result of chronic or prolonged stress. Most people realize they have a stress belly after struggling to lose weight. Despite following the best weight loss guidance, people with a stressful belly won’t notice much difference in their stomachs because they aren’t treating the hormones that are at the root of the problem. Prolonged stress leads to increased blood sugar levels, which makes cortisol levels rise, which increases belly fat. It’s easier said than done, but reducing and limiting your stress and stress hormones is key to controlling elevated stress cortisol levels. Find time to do more things that calm you down and make you feel relaxed. Planning time for yoga, activities with loved ones, reading, art, and more can ensure that you get to unwind.
+
+            </p>
+
+        </div>
+
+        <br>
+        <div id="3">
+            <h1 style="font-size: 24px; font-weight: bold;">The Final Word</h1>
+            <p style="font-size: 14px; line-height: 1.6;">It is not a good idea to approach weight loss with the mindset of strictly cutting down all types of food. Reducing carbohydrate intake while increasing fibre and protein intake is more effective than a low-fat diet in reducing abdominal fat. Aim for moderate-intensity exercise for at least half an hour on most days of the week. To make sure you can make a significant dietary change without running any risks to your health, please speak with a healthcare provider.
+            </p>
+
+            <p style="font-size: 14px; line-height: 1.6;">Disclaimer: The purpose of this article is just to disperse knowledge and raise awareness. It does not intend to replace medical advice from professionals. For further information, please contact our certified nutritionists.
+            </p>
+
+        </div>
+
+        <div id="5">
+            <h1 style="font-size: 24px; font-weight: bold;">Research Sources</h1>
+            <p style="font-size: 14px; line-height: 1.6;">
+                <a href="https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2021.738878/full"><b>1. </b>Clinical Evidence and Mechanisms of High-Protein Diet-Induced Weight Loss
+
+                </a>
+                <br>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/24427426/"><b>2. </b>Effect of Fibre Supplementation on Body Weight and Composition, Frequency of Eating and 
+
+                    Dietary Choice in Overweight Individuals</a>
+                <br>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/21395364/"><b>3. </b>Sleep Deprivation: Effects on Weight Loss and Weight Loss Maintenance
+                </a>
+                <br>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/31219252/"><b>4. </b>Sleep Duration and Five-Year Abdominal Fat Accumulation in a Minority Cohort: The IRAS Family Study
+                </a>
+                <br>
+            </p>
+        </div>
+
+    </div>
+
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-body-tertiary text-muted mt-4">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+              <!-- Left -->
+              <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+              </div>
+              <!-- Left -->
+        
+              <!-- Right -->
+              <div>
+                <a href="" class="me-4 text-reset">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                  <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+        
+            <!-- Section: Links  -->
+            <section class="">
+              <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                      <i class="fas fa-gem me-3"></i>Fit Sphere
+                    </h6>
+                    <p>
+                      we're dedicated to helping you achieve your health and wellness goals.<br>
+                      From personalized workout plans and nutritional guidance to fitness tips<br>
+                      and motivational resources, we provide everything you need to lead an active,<br>
+                      balanced lifestyle. Whether you're a beginner or an experienced athlete, our community<br>
+                      and expert trainers are here to support your journey to a stronger, healthier you.<br>
+                    </p>
+                  </div>
+                  <!-- Grid column -->
+        
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                      Useful links
+                    </h6>
+                    <p>
+                      <a href="../BMI calculator/index.html" class="text-reset">BMI Calculator</a>
+                    </p>
+                    <p>
+                      <a href="../Diet/diet.html" class="text-reset">Diet</a>
+                    </p>
+                    <p>
+                      <a href="../Health/health.html" class="text-reset">Health</a>
+                    </p>
+                    <p>
+                      <a href="../Workout/workout.html" class="text-reset">Workout</a>
+                    </p>
+                  </div>
+                  <!-- Grid column -->
+        
+                  <!-- Grid column -->
+                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Contact us on Email & Phone No.</h6>
+                    <p><i class="fas fa-home me-3"></i> prajapatitushar9720@gmail.com</p>
+                    <p><i class="fas fa-home me-3"></i> yashvich.77@gmail.com</p>
+                    <p><i class="fas fa-home me-3"></i> prajapatitushar9720@gmail.com</p>
+                    <p><i class="fas fa-phone me-3"></i> +918439679293</p>
+                    <p><i class="fas fa-print me-3"></i> +919319935730</p>
+                    <p><i class="fas fa-print me-3"></i> +919305051985</p>
+                  </div>
+                  <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+              </div>
+            </section>
+            <!-- Section: Links  -->
+        
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+              © 2024 Copyright:
+              <a class="text-reset fw-bold" href="https://mdbootstrap.com/">FitSphere</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+          <!-- Footer -->
+</body>
+
+</html>

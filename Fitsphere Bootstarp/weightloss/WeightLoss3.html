@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>workout</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: whitesmoke;
+    }
+    .navbar {
+        background: white;
+        font-family: calibri;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .navdiv {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo a {
+        font-size: 35px;
+        font-weight: 500;
+        color: black;
+        text-decoration: none;
+    }
+
+    li {
+        list-style: none;
+        display: inline-block;
+    }
+
+    li a {
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 25px;
+        text-decoration: none;
+        padding: 70px;
+    }
+
+    .content {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .content h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .content .author {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .content .author img {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .content .author .name {
+        font-weight: bold;
+    }
+
+    .content .author .date {
+        color: #888;
+        margin-left: 10px;
+    }
+
+    .content img.main-image {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .content p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .content .toc {
+        background-color: #f1f1f1;
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .content .toc h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .content .toc ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .content .toc ul li {
+        margin-bottom: 5px;
+    }
+
+    .content .toc ul li a {
+        font-size: 17px;
+        text-decoration: none;
+        color: #007bff;
+    }
+
+    .content h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        margin-top: 80px;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-4">
+        <img src="https://png.pngtree.com/png-vector/20240115/ourmid/pngtree-3d-body-builder-gym-logo-image-png-image_11437963.png" alt="Bootstrap" width="80" height="60">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">FitSphere</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../Diet/diet.html">Diet</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../weightloss/WeightLoss.html">WeightLoss</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../yoga/Yoga.html">Yoga</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Health/health.html">Health</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Workout/workout.html">Workout</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../BMI calculator/index.html">BMI Calculator</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="content">
+        <h1>
+            Brown Fat and White Fat: Everything You Should Know
+        </h1>
+        <div class="author">
+            <!-- <img alt="Author Image" height="40"
+                src="https://storage.googleapis.com/a1aa/image/7AuhKGiWffop0kRBNVuQRhYwOj6ZQIfBdod7mIpK5HX6aWZnA.jpg"
+                width="40" /> -->
+            <div class="name">
+                Nahida
+            </div>
+            <div class="date">
+                April 10, 2024
+            </div>
+        </div>
+        <img alt="Workout" class="main-image" height="400"
+            src="https://www.healthifyme.com/blog/wp-content/uploads/2024/03/shutterstock_498090097-1.jpg" width="800" />
+        <p>
+            People commonly associate weight loss with building muscle and reducing body fat. However,  the actual complexity lies in the various types of body fat, collectively known as adipose tissue. White fat and brown fat are two types of adipose (fatty) tissue with unique functions. Despite discussions on health, fitness, and diet often focusing on body fat, many overlook the differences and implications of brown fat and white fat. This oversight arises from the misconception that fat is a uniform type or colour. In reality, each type of fat has a distinct composition and colour and functions differently in the body.
+        </p>
+        <div class="toc">
+            <h2>
+                Table of Contents
+            </h2>
+            <a href="#diet">
+                1.Types of Body Fat by Colour
+            </a>
+            <br>
+            <a href="#health">
+                2. Brown Fat Vs. White Fat
+            </a>
+            <br>
+            <a href="#3">
+                3. Is Brown Fat More Beneficial Than Other Types of Fat?
+            </a>
+            <br>
+            <a href="#4">
+                4. Some Common Ways to Increase Brown Fat
+            </a>
+            <br>
+            <a href="#5">
+                5. The Final Word
+            </a>
+            <br>
+            <a href="#6">
+                6. Research Sources
+            </a>
+        </div>
+
+        <br>
+
+        <p style="font-size: 14px; line-height: 1.6;">
+            When trying to improve your health, it’s crucial to recognise that certain types of body fat may be more beneficial than others. For example, people often consider brown fat as the “good” fat because it burns calories to produce heat. Therefore, understanding the functions and characteristics of white and brown fat can enhance your awareness of body composition. This knowledge, in turn, guides you toward personalised steps to improve wellness and reduce the risk of diseases.
+        </p>
+
+        <br>
+
+        <div id="diet">
+            <h1 style="font-size: 24px; font-weight: bold;">Types of Body Fat by Colour</h1>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Body fat is an umbrella term for a variety of fat cells, with colours ranging from white to brown. These various types of body fat play different roles in your body, and some may contribute to different problems. Here’s a breakdown of the primary colours of fat cells.
+            </p>
+
+            <h1 style="font-size: 24px; font-weight: bold;">White Fat</h1>
+            <p style="font-size: 14px; line-height: 1.6;">
+                White fat cells vary in size and colour, ranging from white to pale yellow. Their primary function is storing and releasing energy. White fat settles in areas like the face, midsection, thighs, and buttocks as subcutaneous or visceral fat. White fat is greasy and loosely held together by connective tissue. It acts as a protective or cushioning layer for organs.
+            </p>
+
+            <h1 style="font-size: 24px; font-weight: bold;">Brown Fat</h1>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Brown fat in your body is firmer than white/yellow fat and smaller than white fat molecules. Its location changes from birth to adulthood. It typically settles in essential areas like between the shoulder blades, around the neck, kidneys, adrenal glands, heart, and chest. 
+            </p>
+
+            <h2 style="font-size: 18px; font-weight: bold; margin-top: 20px;">Summary</h2>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Body fat includes various coloured cells, each contributing to health in different ways. Excess white fat, stored in areas like the midsection or abdomen, can lead to metabolic issues. Yellow fat, tinted by carotene, functions like regular white cells. Brown fat, rich in mitochondria, regulates temperature, improving insulin sensitivity. Beige fat, a blend of white and brown, activated in low temperatures, can burn energy and protect organs, though less efficiently than brown fat.
+            </p>
+        </div>
+
+        <br>
+
+        <div id="health">
+            <h1 style="font-size: 24px; font-weight: bold;">Brown Fat Vs. White Fat
+                            </h1>
+            <h2 style="font-size: 18px; margin-top: 20px;">Colour
+                            </h2>
+             <p style="font-size: 14px; line-height: 1.6;">White fat appears white or yellowish, whereas brown fat looks brown due to a higher abundance of mitochondria and blood vessels.
+            </p>
+                
+            <h2 style="font-size: 18px; margin-top: 20px;">Location
+            </h2>
+            <p style="font-size: 14px; line-height: 1.6;">White fat accumulates in the midriff, thighs, and hips, just beneath the skin, while brown fat is located in the neck and shoulders. Additionally, brown fat resides deeper within the body than white fat cells, making it challenging to study over the years.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Energy storage
+            </h2>
+            <p style="font-size: 14px; line-height: 1.6;">White fat stores energy in large fat droplets, whereas brown fat, with its smaller droplets, is specialised to burn them, generating heat.</p>
+            <p style="font-size: 14px; line-height: 1.6;">White fat makes up most of the fat in your body since it accumulates over time due to excess calorie intake. Excessive white fat, particularly around the belly, heightens the risk of metabolic disorders. Therefore, most people aim to reduce or avoid accumulating this type of fat.
+            </p>
+
+            <p style="font-size: 14px; line-height: 1.6;">
+                Brown fat, known as the “good” kind, is rich in iron-packed mitochondria, storing energy more efficiently than white fat. It also aids in maintaining body temperature, facilitating calorie burning when exposed to cold. Therefore, you must maintain a healthy level of brown fat.
+            </p>
+
+            <h2 style="font-size: 18px; font-weight: bold; margin-top: 20px;">Summary</h2>
+            <p style="font-size: 14px; line-height: 1.6;">
+                White fat appears white or yellowish, is spherical, and has fewer mitochondria, storing energy in large droplets. In contrast, brown fat looks brown, is elliptical and smaller, containing more mitochondria for thermogenesis. White fat, accumulated over time with excess calories, raises metabolic disorder risks. Brown fat, the “good” kind, efficiently aids in calorie burning, emphasising the importance of maintaining a healthy balance. 
+            </p>
+        </div>
+
+        <br>
+
+        <div id="3">
+            <h1 style="font-size: 24px; font-weight: bold;">Is Brown Fat More Beneficial Than Other Types of Fat?
+                            </h1>
+            <p style="font-size: 14px; line-height: 1.6;">Active brown fat utilises energy from glucose, protein, and fat to regulate body temperature, potentially influencing the body’s metabolic health. This unique energy usage suggests that brown fat may contribute to addressing issues related to obesity and diabetes.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Manage Diabetes
+            </h2>
+            <p style="font-size: 14px; line-height: 1.6;">Brown fat’s ability to use glucose more efficiently can be helpful for type 2 diabetes. Less brown fat is linked to insulin resistance, a key factor in diabetes. Exposure to cold can increase brown fat activity and improve glucose uptake by 20%, suggesting potential benefits for those with type 2 diabetes.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Manage Obesity
+            </h2>
+            <p style="font-size: 14px; line-height: 1.6;">Obesity often involves inflammation, but brown fat is less prone to inflammation than white fat. Additionally, brown fat’s ability to burn energy is beneficial for overweight or obese individuals. A fully activated brown adipose tissue could result in an extra expenditure of around 100 calories per day. Though it may not sound like much, this additional energy burn could accumulate over time, contributing to the support or maintenance of a healthier weight.</p>
+
+            <h2 style="font-size: 18px; font-weight: bold; margin-top: 20px;">Summary</h2>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Active brown fat utilises glucose, protein, and fat to regulate body temperature, potentially impacting metabolic health and addressing issues related to obesity and diabetes. Brown fat’s efficient glucose use aids those with type 2 diabetes, and its inflammation resistance benefits overweight individuals. Fully activated brown fat could burn an extra 100 calories daily, contributing to a healthier fat balance over time.
+            </p>
+        </div>
+
+        <br>
+
+        <div id="4">
+            <h1 style="font-size: 24px; font-weight: bold;">Some Common Ways to Increase Brown Fat
+            </h1>
+
+            <h2 style="font-size: 18px; font-weight: bold; margin-top: 20px;">Cold Exposure</h2>
+            <p style="font-size: 14px; line-height: 1.6;">Subjecting your body to cool or cold temperatures can boost brown fat cells. To enhance brown and beige fat, spending two hours daily in a 65-degree room, dressed to experience coolness and shivering without reaching freezing temperatures, should be adequate. Ongoing research is also exploring “beige fat,” which is essentially white fat partially converted to brown fat in response to cold exposure. 
+            </p>
+
+            <h2 style="font-size: 18px; font-weight: bold; margin-top: 20px;">Exercise
+            </h2>
+            <p style="font-size: 14px; line-height: 1.6;">Irisin, a protein hormone, can aid in the transformation of white fat to brown. People who exercise frequently, mainly through intense aerobics, generate higher levels of irisin than those with lower activity levels. Exercise-induced browning of fat in men and its associated benefits can continue even beyond a 12-week training period.
+            </p>
+
+            <h2 style="font-size: 18px; font-weight: bold; margin-top: 20px;">Summary</h2>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Cold exposure, achieved through controlled cool temperatures, stimulates brown and beige fat development. Exercise, particularly intense aerobics, boosts the protein hormone irisin, facilitating white fat transformation. Certain foods and spices, including chilli peppers, resveratrol, and green tea, activate molecular pathways for browning fat cells. Fish oil, rich in omega-3 fatty acids, stimulates thermogenic activity in beige fat cells. HealthifyMe’s weight loss programs integrate body composition monitoring for personalised body fat management.
+            </p>
+        </div>
+
+        <div id="5">
+            <h1 style="font-size: 24px; font-weight: bold;">The Final Word</h1>
+            <p style="font-size: 14px; line-height: 1.6;"> Understanding the difference between brown and white fat is necessary for body fat management. Brown fat’s ability to burn calories efficiently, improve insulin sensitivity, and resist inflammation makes it a potential factor for managing obesity and diabetes. Integrating practices like cold exposure, medications, exercise, and specific foods can stimulate brown fat activity. 
+            </p>
+
+            <p style="font-size: 14px; line-height: 1.6;">HealthifyMe’s personalised weight loss programs consider individual differences, providing accurate support for various conditions. This holistic approach addresses the root causes, allowing effective fat management and overall well-being.</p>
+
+            <p style="font-size: 14px; line-height: 1.6;">Disclaimer: The purpose of this article is just to disperse knowledge and raise awareness. It does not intend to replace medical advice from professionals. For further information, please contact our certified nutritionists.</p>
+        </div>
+
+        <div id="6">
+            <h1 style="font-size: 24px; font-weight: bold;">Research Sources</h1>
+            <p style="font-size: 14px; line-height: 1.6;">
+                <a href="https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2021.738878/full"><b>1. </b>The Effect of Irisin as a Metabolic Regulator and Its Therapeutic Potential for Obesity
+                </a>
+                <br>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/24427426/"><b>2. </b>Food Ingredients Involved in White-to-Brown Adipose Tissue Conversion and in Calorie Burning</a>
+                <br>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/21395364/"><b>3. </b>UCP1-independent signalling involving SERCA2b-mediated calcium cycling regulates beige fat thermogenesis and systemic glucose homeostasis.
+
+                </a>
+                <br>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/31219252/"><b>4. </b>Brown and Beige Fat: Molecular Parts of a Thermogenic Machine </a>
+                <br>
+                <a href="https://eurapa.biomedcentral.com/articles/10.1007/s11556-014-0144-1"><b>5. </b>The Relationship Between Brown Adipose Tissue Content in Supraclavicular Fat Depots and Insulin Sensitivity in Patients with Type 2 Diabetes Mellitus and Prediabetes</a>
+                <br>
+            </p>
+        </div>
+
+    </div>
+
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-body-tertiary text-muted mt-4">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+              <!-- Left -->
+              <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+              </div>
+              <!-- Left -->
+        
+              <!-- Right -->
+              <div>
+                <a href="" class="me-4 text-reset">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                  <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+        
+            <!-- Section: Links  -->
+            <section class="">
+              <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                      <i class="fas fa-gem me-3"></i>Fit Sphere
+                    </h6>
+                    <p>
+                      we're dedicated to helping you achieve your health and wellness goals.<br>
+                      From personalized workout plans and nutritional guidance to fitness tips<br>
+                      and motivational resources, we provide everything you need to lead an active,<br>
+                      balanced lifestyle. Whether you're a beginner or an experienced athlete, our community<br>
+                      and expert trainers are here to support your journey to a stronger, healthier you.<br>
+                    </p>
+                  </div>
+                  <!-- Grid column -->
+        
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                      Useful links
+                    </h6>
+                    <p>
+                      <a href="../BMI calculator/index.html" class="text-reset">BMI Calculator</a>
+                    </p>
+                    <p>
+                      <a href="../Diet/diet.html" class="text-reset">Diet</a>
+                    </p>
+                    <p>
+                      <a href="../Health/health.html" class="text-reset">Health</a>
+                    </p>
+                    <p>
+                      <a href="../Workout/workout.html" class="text-reset">Workout</a>
+                    </p>
+                  </div>
+                  <!-- Grid column -->
+        
+                  <!-- Grid column -->
+                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Contact us on Email & Phone No.</h6>
+                    <p><i class="fas fa-home me-3"></i> prajapatitushar9720@gmail.com</p>
+                    <p><i class="fas fa-home me-3"></i> yashvich.77@gmail.com</p>
+                    <p><i class="fas fa-home me-3"></i> prajapatitushar9720@gmail.com</p>
+                    <p><i class="fas fa-phone me-3"></i> +918439679293</p>
+                    <p><i class="fas fa-print me-3"></i> +919319935730</p>
+                    <p><i class="fas fa-print me-3"></i> +919305051985</p>
+                  </div>
+                  <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+              </div>
+            </section>
+            <!-- Section: Links  -->
+        
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+              © 2024 Copyright:
+              <a class="text-reset fw-bold" href="https://mdbootstrap.com/">FitSphere</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+          <!-- Footer -->
+</body>
+
+</html>

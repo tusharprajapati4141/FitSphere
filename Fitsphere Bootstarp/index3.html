@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>workout</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: whitesmoke;
+    }
+    .navbar {
+        background: white;
+        font-family: calibri;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .navdiv {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo a {
+        font-size: 35px;
+        font-weight: 500;
+        color: black;
+        text-decoration: none;
+    }
+
+    li {
+        list-style: none;
+        display: inline-block;
+    }
+
+    li a {
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 25px;
+        text-decoration: none;
+        padding: 70px;
+    }
+
+    .content {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .content h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .content .author {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .content .author img {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .content .author .name {
+        font-weight: bold;
+    }
+
+    .content .author .date {
+        color: #888;
+        margin-left: 10px;
+    }
+
+    .content img.main-image {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .content p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .content .toc {
+        background-color: #f1f1f1;
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .content .toc h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .content .toc ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .content .toc ul li {
+        margin-bottom: 5px;
+    }
+
+    .content .toc ul li a {
+        font-size: 17px;
+        text-decoration: none;
+        color: #007bff;
+    }
+
+    .content h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        margin-top: 80px;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-4">
+        <img src="https://png.pngtree.com/png-vector/20240115/ourmid/pngtree-3d-body-builder-gym-logo-image-png-image_11437963.png" alt="Bootstrap" width="80" height="60">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">FitSphere</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../Diet/diet.html">Diet</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../weightloss/WeightLoss.html">WeightLoss</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../yoga/Yoga.html">Yoga</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Health/health.html">Health</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Workout/workout.html">Workout</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../BMI calculator/index.html">BMI Calculator</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="content">
+        <h1>
+            Introduction to Smart Scale
+        </h1>
+        <div class="author">
+            <!-- <img alt="Author Image" height="40"
+                src="https://storage.googleapis.com/a1aa/image/7AuhKGiWffop0kRBNVuQRhYwOj6ZQIfBdod7mIpK5HX6aWZnA.jpg"
+                width="40" /> -->
+            <div class="name">
+                Imon Roy
+            </div>
+            <div class="date">
+                October 31, 2023
+            </div>
+        </div>
+        <img alt="Workout" class="main-image" height="400"
+            src="https://www.healthifyme.com/blog/wp-content/uploads/2023/05/Smart-Scale-Article_1280x600-1-1.jpg" width="800" />
+        <p>
+            We live in a world that celebrates efficiency, efficacy, and accessibility. Yet in all of this we somehow forget that our health is the greatest virtue. Technological advancements have been a boon to medical science and  these innovations have redefined the need of prevention and precaution. One such mechanism which is designed to nudge people into embracing a healthy lifestyle is a Smart Scale. 
+        </p>
+        <div class="toc">
+            <h2>
+                Table of Contents
+            </h2>
+            <a href="#diet">
+                1. How Does a Smart Scale Work? 
+            </a>
+            <br>
+            <a href="#health">
+                2. Who Should Use a Smart Scale?
+            </a>
+            <br>
+            <a href="#3">
+                3. How Does the HealthlifyMe Smart Scale Benefit Your Transformational Journey?
+            </a>
+            <br>
+            <a href="#4">
+                4. How Accurate is HealthifyMe Smart Scale?
+            </a>
+            <br>
+            <a href="#5">
+                5. How can You get a HealthifyMe Smart Scale?
+            </a>
+            <br>
+            <a href="#6">
+                6. Final Words
+            </a>
+        </div>
+
+        <br>
+
+        <p style="font-size: 14px; line-height: 1.6;">
+            Unlike other weighing scales that offer information only about your weight, Smart Scales are electronic devices that measure and track your fitness data, beyond weight. Of course, it measures your weight, simultaneously, it also calculates other health metrics like body fat percentage, metabolic age, bone density, etc. 
+
+            Healthify 2.0 is all about creating a fitness ecosystem and the HealthifyMe Smart Scale is a tool that helps track various fitness dimensions essential to keep you motivated throughout your wellness journey and more. If you have questions about Smart Scales, its utility, and how it helps one in their day to day lives, this article will answer all. 
+        </p>
+
+        <br>
+
+        <div id="diet">
+            <h1 style="font-size: 24px; font-weight: bold;">How Does a Smart Scale Work?</h1>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Just more than a decade ago, this was unimaginable, to comprehend how a compact home like  a weighing scale is able to learn about one’s body composition. The science behind the functioning of a smart scale is that it uses BIA (Bioelectrical Impedance Analysis). It has two electrodes that send a small painless electrical current that enters from one leg and travels up to your pelvis and exits from the other leg. This current can pass through muscles, lean tissues, etc., and accumulate information about the body’s composition.
+
+                The HealthifyMe Smart Scale is a Bluetooth syncing device that easily connects with the HealthifyMe App and helps you track your diet and fitness progress. It is designed to evaluate 12 major body metrics along with smart weight tracking at your convenience. Also, these values help nutritionists and fitness professionals to customize recommendations and guide you accordingly. 
+            </p>
+
+            <h1 style="font-size: 24px; font-weight: bold;">Who Should Use a Smart Scale?</h1>
+            <p style="font-size: 14px; line-height: 1.6;">
+                A smart scale brings about convenience and accuracy in the daily life of people who need to track their basic health information or work towards their weight loss/weight gain journey. It is a simple piece of equipment that can help you gain some insight into your overall health.
+            </p>
+        </div>
+
+        <br>
+
+        <div id="health">
+            <h1 style="font-size: 24px; font-weight: bold;">How Does the HealthlifyMe Smart Scale Benefit Your Transformational Journey?
+                            </h1>
+            <p style="font-size: 14px; line-height: 1.6;">The HealthifyMe Smart Scale is designed to help one understand their body composition easily and thus take essential steps in the direction of healthy living. Whether you are trying to lose weight or gain muscle mass, this device helps you or your nutritionist understand your bodily mechanics better and take constructive steps towards your goal. </p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Weight
+            </h2>
+            <p style="font-size: 14px; line-height: 1.6;">The Smart Scale like any other weighing scale, provides the accurate weight of an individual and is ideal for goal setting. You can check your weight on the digital screen of your smart scale or even log in to your HealthifyMe App. You can also set weekly reminders on the App that nudges you to log in your weight.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Body Fat
+            </h2>
+            <p style="font-size: 14px; line-height: 1.6;">It also tells you the approximate body fat percentage that a person has and if it is normal, borderline, or unusual. The scale sends a painless electric current through one of the legs that assess tissues, muscle, etc. up to your pelvis. Fat is a poor conductor of electricity than muscle or water and thus causes resistance. The scale picks up on that and displays a body percentage. </p>
+
+           
+
+            <h2 style="font-size: 18px; margin-top: 20px;">BMI
+
+            </h2>
+            <p style="font-size: 14px; line-height: 1.6;">BMI or Body Mass Index is a way to estimate your body fat ratio and is also exceptionally useful to identify any underlying health risks. Using a smart scale to determine BMI is great as it is quick, easy, and accessible. 
+
+            </p>
+        </div>
+
+        <br>
+
+        <div id="3">
+            <h1 style="font-size: 24px; font-weight: bold;">Tips to maintain Ideal weight</h1>
+            <p style="font-size: 14px; line-height: 1.6;">The efficacy of the height-weight charts is most pronounced in adults as the measurements are standardized as compared to children. So, certainly for adults, it is less prone to variation, which is crucial in the case of growing children, where it can impact the development of the child.
+
+                There are many benefits to maintaining ideal body weight. Being either underweight or overweight leads to undesirable health outcomes. Poor nutrition, stress and lifestyle changes lead to deviation from ideal body weight.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">1. Adhere to a Healthy Diet
+            </h2>
+            <p style="font-size: 14px; line-height: 1.6;">Diet plays a key role in keeping you healthy and fit. A balanced diet offers various health benefits like weight management, good gut health and a strong immune system.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">2. Embrace active habits
+            </h2>
+            <p style="font-size: 14px; line-height: 1.6;">Keep yourself fit and energetic throughout the day by following a daily routine of physical activity that suits your schedule. The idea is to balance the calorie intake with calories burned and be active.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">3. Adequate rest</h2>
+            <p style="font-size: 14px; line-height: 1.6;">Do not forget the spirit of the adage, which defines a healthy and sound mind in going to bed early and rising early. Firstly, this keeps the biological clock in order and secondly, balances hormone secretion in the body.</p>
+
+            <h2 style="font-size: 18px; font-weight: bold; margin-top: 20px;">4. Reduce stress</h2>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Stress can be the sole cause of various underlying conditions like obesity, hypertension, diabetes etc.
+
+In order to shun away stress, you need to follow healthy food habits, active lifestyle, and sleep soundly. In addition to it, you will further feel relaxed if you avaoid smoking, drinking, and excessive intake of caffeine.
+            </p>
+        </div>
+
+        <br>
+    </div>
+ <!-- Footer -->
+ <footer class="text-center text-lg-start bg-body-tertiary text-muted mt-4">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Fit Sphere
+            </h6>
+            <p>
+              we're dedicated to helping you achieve your health and wellness goals.<br>
+              From personalized workout plans and nutritional guidance to fitness tips<br>
+              and motivational resources, we provide everything you need to lead an active,<br>
+              balanced lifestyle. Whether you're a beginner or an experienced athlete, our community<br>
+              and expert trainers are here to support your journey to a stronger, healthier you.<br>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="./BMI calculator/index.html" class="text-reset">BMI Calculator</a>
+            </p>
+            <p>
+              <a href="./Diet/diet.html" class="text-reset">Diet</a>
+            </p>
+            <p>
+              <a href="./Health/health.html" class="text-reset">Health</a>
+            </p>
+            <p>
+              <a href="./Workout/workout.html" class="text-reset">Workout</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact us on Email & Phone No.</h6>
+            <p><i class="fas fa-home me-3"></i> prajapatitushar9720@gmail.com</p>
+            <p><i class="fas fa-home me-3"></i> yashvich.77@gmail.com</p>
+            <p><i class="fas fa-home me-3"></i> prajapatitushar9720@gmail.com</p>
+            <p><i class="fas fa-phone me-3"></i> +918439679293</p>
+            <p><i class="fas fa-print me-3"></i> +919319935730</p>
+            <p><i class="fas fa-print me-3"></i> +919305051985</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2024 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">FitSphere</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</body>
+
+</html>

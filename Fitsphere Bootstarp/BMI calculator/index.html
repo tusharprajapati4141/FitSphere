@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive BMI Calculator</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+        .navbar {
+        background: white;
+        font-family: calibri;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .navdiv {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+        .card {
+            background: #fff;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            margin: 40px auto;
+            max-width: 500px;
+        }
+        .btn-custom {
+            background-color: #ff6f61;
+            color: #fff;
+            border-radius: 20px;
+        }
+        .btn-custom:hover {
+            background-color: #ff3b3b;
+        }
+        .result {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #333;
+        }
+        .suggestion {
+            margin-top: 20px;
+        }
+        .suggestion img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin: 20px auto;
+            display: block;
+        }
+        .links a {
+            text-decoration: none;
+            color: #ff6f61;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary py-4">
+    <img src="https://png.pngtree.com/png-vector/20240115/ourmid/pngtree-3d-body-builder-gym-logo-image-png-image_11437963.png" alt="Bootstrap" width="80" height="60">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">FitSphere</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="../Diet/diet.html">Diet</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../weightloss/WeightLoss.html">WeightLoss</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../yoga/Yoga.html">Yoga</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Health/health.html">Health</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Workout/workout.html">Workout</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../BMI calculator/index.html">BMI Calculator</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<div class="container">
+    <div class="card p-4">
+        <h1 class="text-center text-primary">Interactive BMI Calculator</h1>
+        <p class="text-center text-muted">Calculate your BMI and get tailored suggestions for diet and exercise.</p>
+        <form id="bmiForm">
+            <div class="mb-3">
+                <label for="weight" class="form-label">Weight (kg):</label>
+                <input type="number" class="form-control" id="weight" placeholder="Enter your weight" required>
+            </div>
+            <div class="mb-3">
+                <label for="height" class="form-label">Height (cm):</label>
+                <input type="number" class="form-control" id="height" placeholder="Enter your height" required>
+            </div>
+            <button type="submit" class="btn btn-custom w-100">Calculate BMI</button>
+        </form>
+        <div id="resultSection" class="mt-4">
+            <p class="result text-center" id="bmiResult"></p>
+            <div class="suggestion" id="suggestions"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted mt-4">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Fit Sphere
+            </h6>
+            <p>
+              we're dedicated to helping you achieve your health and wellness goals.<br>
+              From personalized workout plans and nutritional guidance to fitness tips<br>
+              and motivational resources, we provide everything you need to lead an active,<br>
+              balanced lifestyle. Whether you're a beginner or an experienced athlete, our community<br>
+              and expert trainers are here to support your journey to a stronger, healthier you.<br>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="../BMI calculator/index.html" class="text-reset">BMI Calculator</a>
+            </p>
+            <p>
+              <a href="../Diet/diet.html" class="text-reset">Diet</a>
+            </p>
+            <p>
+              <a href="../Health/health.html" class="text-reset">Health</a>
+            </p>
+            <p>
+              <a href="../Workout/workout.html" class="text-reset">Workout</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact us on Email & Phone No.</h6>
+            <p><i class="fas fa-home me-3"></i> prajapatitushar9720@gmail.com</p>
+            <p><i class="fas fa-home me-3"></i> yashvich.77@gmail.com</p>
+            <p><i class="fas fa-home me-3"></i> prajapatitushar9720@gmail.com</p>
+            <p><i class="fas fa-phone me-3"></i> +918439679293</p>
+            <p><i class="fas fa-print me-3"></i> +919319935730</p>
+            <p><i class="fas fa-print me-3"></i> +919305051985</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2024 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">FitSphere</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.getElementById('bmiForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        // Get input values
+        const weight = parseFloat(document.getElementById('weight').value);
+        const height = parseFloat(document.getElementById('height').value) / 100; // Convert cm to meters
+
+        // Calculate BMI
+        const bmi = (weight / (height * height)).toFixed(1);
+        const resultText = document.getElementById('bmiResult');
+        const suggestionSection = document.getElementById('suggestions');
+
+        let category = '';
+        let suggestions = '';
+
+        if (bmi < 18.5) {
+            category = 'Underweight';
+            suggestions = `
+                <h5 class="text-warning">Diet and Exercise Suggestions:</h5>
+                <ul>
+                    <li>Diet: Include calorie-dense foods like nuts, dairy, and lean meats. <a href="https://www.medicalnewstoday.com/articles/how-to-gain-weight" target="_blank">Read more</a></li>
+                    <li>Exercise: Strength training 3–4 times a week. Avoid excessive cardio. <a href="https://www.verywellfit.com/how-to-exercise-when-you-are-underweight-3120803" target="_blank">Read more</a></li>
+                    <li>Duration: Follow the plan for 2–3 months, adjusting as needed.</li>
+                </ul>
+                <img src="https://www.eatthis.com/wp-content/uploads/sites/4/2018/07/healthy-foods-calories.jpg" alt="Healthy food for weight gain">
+            `;
+        } else if (bmi >= 18.5 && bmi <= 24.9) {
+            category = 'Normal Weight';
+            suggestions = `
+                <h5 class="text-success">Diet and Exercise Suggestions:</h5>
+                <ul>
+                    <li>Diet: Balance proteins, carbs, and fats with plenty of fruits and vegetables. <a href="https://www.hsph.harvard.edu/nutritionsource/healthy-eating-plate/" target="_blank">Read more</a></li>
+                    <li>Exercise: Mix cardio and strength training 4–5 times a week. <a href="https://www.verywellfit.com/the-best-types-of-exercise-for-overall-health-5205487" target="_blank">Read more</a></li>
+                    <li>Duration: Maintain this lifestyle indefinitely.</li>
+                </ul>
+                <img src="https://images.pexels.com/photos/1084584/pexels-photo-1084584.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Balanced diet">
+            `;
+        } else {
+            category = 'Overweight';
+            suggestions = `
+                <h5 class="text-danger">Diet and Exercise Suggestions:</h5>
+                <ul>
+                    <li>Diet: Reduce sugary and processed foods. Focus on low-carb, high-fiber options. <a href="https://www.healthline.com/nutrition/weight-loss-friendly-foods" target="_blank">Read more</a></li>
+                    <li>Exercise: Cardio (running, cycling) 5 times a week plus strength training. <a href="https://www.verywellfit.com/best-exercises-to-lose-weight-3496121" target="_blank">Read more</a></li>
+                    <li>Duration: Follow for 4–6 months, monitoring your progress.</li>
+                </ul>
+                <img src="https://post.healthline.com/wp-content/uploads/2020/05/Man_Jogging-1200x628-facebook-1200x628.jpg" alt="Cardio exercises">
+            `;
+        }
+
+        // Display result
+        resultText.textContent = `Your BMI is ${bmi} (${category})`;
+        suggestionSection.innerHTML = suggestions;
+    });
+</script>
+</body>
+</html>

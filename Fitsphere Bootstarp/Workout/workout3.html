@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>workout</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: whitesmoke;
+    }
+    .navbar {
+        background: white;
+        font-family: calibri;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .navdiv {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo a {
+        font-size: 35px;
+        font-weight: 500;
+        color: black;
+        text-decoration: none;
+    }
+
+    li {
+        list-style: none;
+        display: inline-block;
+    }
+
+    li a {
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 25px;
+        text-decoration: none;
+        padding: 70px;
+    }
+
+    .content {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .content h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .content .author {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .content .author img {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .content .author .name {
+        font-weight: bold;
+    }
+
+    .content .author .date {
+        color: #888;
+        margin-left: 10px;
+    }
+
+    .content img.main-image {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .content p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .content .toc {
+        background-color: #f1f1f1;
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .content .toc h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .content .toc ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .content .toc ul li {
+        margin-bottom: 5px;
+    }
+
+    .content .toc ul li a {
+        font-size: 17px;
+        text-decoration: none;
+        color: #007bff;
+    }
+
+    .content h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        margin-top: 80px;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-4">
+        <img src="https://png.pngtree.com/png-vector/20240115/ourmid/pngtree-3d-body-builder-gym-logo-image-png-image_11437963.png" alt="Bootstrap" width="80" height="60">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">FitSphere</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../Diet/diet.html">Diet</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../weightloss/WeightLoss.html">WeightLoss</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../yoga/Yoga.html">Yoga</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Health/health.html">Health</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Workout/workout.html">Workout</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../BMI calculator/index.html">BMI Calculator</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="content">
+        <h1>
+            Muscular Hypertrophy: A Beginner’s Guide to Building Muscle
+        </h1>
+        <div class="author">
+            <!-- <img alt="Author Image" height="40"
+                src="https://storage.googleapis.com/a1aa/image/7AuhKGiWffop0kRBNVuQRhYwOj6ZQIfBdod7mIpK5HX6aWZnA.jpg"
+                width="40" /> -->
+            <div class="name">
+                Mehak Shah
+            </div>
+            <div class="date">
+                November 30, 2023
+            </div>
+        </div>
+        <img alt="Workout" class="main-image" height="400"
+            src="https://www.healthifyme.com/blog/wp-content/uploads/2023/11/shutterstock_2280545545-1.jpg" width="800" />
+        <p>
+            Hypertrophy training is what someone’s searching for if they’re seeking an exercise regimen that can help them gain muscle mass. The process of gaining muscle mass is called hypertrophy. It causes the body’s cells, tissues, or organs to enlarge. It leads to increased myofibril proteins (myofilaments) in each muscle fibre, the cross-sectional area. 
+        </p>
+        <div class="toc">
+            <h2>
+                Table of Contents
+            </h2>
+            <a href="#diet">
+                1. Types of Muscle Hypertrophy
+            </a>
+            <br>
+            <a href="#health">
+                2. How Does Muscular Hypertrophy Happen?
+            </a>
+            <br>
+            <a href="#3">
+                3. Is Muscle Hypertrophy Good?
+            </a>
+            <br>
+            <a href="#4">
+                4. How to Activate Hypertrophy?
+            </a>
+            <br>
+            <a href="#5">
+                5. Conclusion
+            </a>
+            <br>
+            <a href="#6">
+                6. Research Sources
+            </a>
+        </div>
+
+        <br>
+
+        <p style="font-size: 14px; line-height: 1.6;">
+            Muscular hypertrophy is an unintended but pleasant side effect of consistent physical training for strong athletes. Furthermore, hypertrophy safeguards an average person’s long and healthy life. Before people can start working on hypertrophy, it is better to know everything about muscular hypertrophy, its health benefits and side effects.
+        </p>
+
+        <br>
+
+        <div id="diet">
+            <h1 style="font-size: 24px; font-weight: bold;">Types of Muscle Hypertrophy</h1>
+            <p style="font-size: 14px; line-height: 1.6;">
+                The term “muscle hypertrophy” describes a rise in muscle cell development. It results from muscular growth by regular activity and a healthy diet. Exercise, particularly weight training exercise, can cause it. Muscle tissue can grow as a result of regular exercise and weightlifting.
+            </p>
+
+            <p style="font-size: 14px; line-height: 1.6;">
+                Muscle hypertrophy happens when the body has a positive net protein balance due to a more significant amount of muscle protein synthesis than breakdown. It is easier to gain lean mass when protein has a positive net balance. It’s important to note that hypertrophy enlarges pre-existing muscle tissue rather than creating new muscles from scratch. In contrast, muscular atrophy may occur if there is a negative net balance of proteins.
+            </p>
+
+            <p style="font-size: 14px; line-height: 1.6;">
+                There are two types of muscle hypertrophy:
+            </p>
+
+            <h2 style="font-size: 16px; margin-top: 20px;">Sarcoplasmic Hypertrophy</h2>
+            <p style="font-size: 14px; line-height: 1.6;">It is the most common type and results in the muscles physically increasing in size or an increase in the volume of sarcoplasm. Sarcoplasmic hypertrophy is a result of higher-repetition, lower-weight resistance training and bodybuilding routines, where the focus is on muscle pump and volume.</p>
+
+            <h2 style="font-size: 16px; margin-top: 20px;">Myofibril Hypertrophy</h2>
+            <p style="font-size: 14px; line-height: 1.6;">This type makes the muscles denser and more compact. Myofibrillar hypertrophy is a result of heavy, low-repetition resistance training, where the focus is on lifting heavy weights for fewer repetitions. It is more common among strength and power athletes like weightlifters and powerlifters.</p>
+
+            <h2 style="font-size: 18px; font-weight: bold; margin-top: 20px;">Summary</h2>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Muscle hypertrophy primarily stems from activities like weight training, which stimulate the muscles to expand. For hypertrophy to occur, the body must maintain a positive net protein balance, meaning the muscle protein synthesis exceeds breakdown. This positive balance is vital for gaining lean muscle mass, as hypertrophy enlarges existing muscles rather than creating entirely new ones. Conversely, negative protein balance can lead to muscular atrophy. There are two main types of muscle hypertrophy: sarcoplasmic hypertrophy, which increases muscle size and volume through high-repetition, low-weight training, and myofibril hypertrophy, which results in denser muscles and is associated with heavy, low-repetition resistance training.
+            </p>
+        </div>
+
+        <br>
+
+        <div id="health">
+            <h1 style="font-size: 24px; font-weight: bold;">How Does Muscular Hypertrophy Happen?</h1>
+            <p style="font-size: 14px; line-height: 1.6;">Muscle hypertrophy is a result of various factors coming together. Such as:</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Exercise-Induced Muscle Damage</h2>
+            <p style="font-size: 14px; line-height: 1.6;">Tiny tears occur in muscle fibres during intense activities, like lowering weights. These tears stimulate the muscles to repair and grow, adapting to withstand future damage.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Metabolic Stress</h2>
+            <p style="font-size: 14px; line-height: 1.6;">Metabolic stress arises from metabolite buildup during intense, anaerobic activities. It signals to the body that hard work is happening, encouraging muscle growth.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Mechanical Tension (Force)
+            </h2>
+            <p style="font-size: 14px; line-height: 1.6;">The force generated within the muscle fibres during exercise triggers protein synthesis and muscle growth. Activating as many muscle fibres as possible is the goal.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Fascia Stretch Training
+            </h2>
+            <p style="font-size: 14px; line-height: 1.6;">This unique technique involves increasing blood flow to specific muscle groups, stretching the fascia tissue, and promoting nutrient-rich blood circulation for repair and growth.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Protein Intake
+            </h2>
+            <p style="font-size: 14px; line-height: 1.6;">The muscles need fuel to grow, and protein is their favourite source. Increasing the protein intake ensures a positive balance, fueling the muscle-building process.</p>
+
+            <h2 style="font-size: 18px; font-weight: bold; margin-top: 20px;">Summary</h2>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Muscular hypertrophy results from a combination of factors. Exercise-induced muscle damage, such as tiny tears in muscle fibres during intense workouts, prompts the muscles to repair and grow, adapting to future challenges. Metabolic stress, caused by metabolite buildup during anaerobic activities, signals the body to encourage muscle growth. Mechanical tension, generated within muscle fibres during exercise, triggers protein synthesis and muscle growth, with the goal of activating as many muscle fibres as possible. Fascia stretch training, a unique technique, increases blood flow to specific muscle groups, stretches fascia tissue, and enhances nutrient-rich blood circulation for repair and growth. Adequate protein intake is crucial, as protein fuels the muscle-building process and maintains a positive balance.
+            </p>
+        </div>
+
+        <br>
+
+        <div id="3">
+            <h1 style="font-size: 24px; font-weight: bold;">Is Muscle Hypertrophy Good?</h1>
+            <p style="font-size: 14px; line-height: 1.6;">Muscle hypertrophy is not only good but also beneficial for the overall health. Incorporating muscle-strengthening activities into the routine is so crucial that even the American Heart Association recommends it at least twice weekly. This exercise can lead to a healthier, more active, and happier life. It leads to the development of lean muscle mass, which offers several advantages:</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Metabolic Function</h2> 
+            <p style="font-size: 14px; line-height: 1.6;"> Hypertrophy training can improve metabolic health. Muscle requires more energy than fat, so building muscle increases the metabolic rate. It helps maintain a healthy weight and fight the metabolic slowdown that often comes with ageing. It can lower blood pressure, improve the blood lipid profile, and enhance glucose tolerance, which is crucial if someone has or is at risk of developing type 2 diabetes.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Bigger Muscles</h2> 
+            <p style="font-size: 14px; line-height: 1.6;"> Hypertrophy training is the way to go if people want to bulk up and get those impressive biceps or quads. It won’t happen on its own; people need to put in the effort.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">More Strength and Power</h2> 
+            <p style="font-size: 14px; line-height: 1.6;"> Bigger muscles are usually stronger. Increasing muscle size can help people lift more if you’re into powerlifting or weightlifting. Some research even suggests that bodybuilders generate more muscle force than strength specialists.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Injury Prevention & Management</h2> 
+            <p style="font-size: 14px; line-height: 1.6;"> Resistance training for hypertrophy makes the muscles bigger and improves their ability to stabilise the joints. It reduces the risk of injuries both in and out of the gym.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Quality of Life</h2> 
+            <p style="font-size: 14px; line-height: 1.6;"> Building muscle mass can enhance movement and functional capacity, leading to a better quality of life. It’s vital as people age, helping them stay healthy and active.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Reduces Risk of Osteoporosis</h2> 
+            <p style="font-size: 14px; line-height: 1.6;"> Building muscle can prevent and even reverse osteoporosis. It strengthens the bones, making them more resistant to fractures, which is particularly valuable as people age.</p>
+
+            <h2 style="font-size: 18px; font-weight: bold; margin-top: 20px;">Summary</h2>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Muscular hypertrophy improves metabolic function by boosting the metabolic rate, aiding in weight management, and enhancing overall health. It also leads to bigger, more impressive muscles when paired with effort. Increased muscle size provides more strength and power, aiding in lifting heavier weights and reducing the risk of injuries. Additionally, it enhances the quality of life by improving movement and functional capacity, and it can even help prevent osteoporosis by strengthening bones. Regular muscle-strengthening activities, recommended by the American Heart Association, contribute to a healthier, more active, and happier life.
+            </p>
+        </div>
+
+        <br>
+
+        <div id="4">
+            <h1 style="font-size: 24px; font-weight: bold;">How to Activate Hypertrophy?
+            </h1>
+            <p style="font-size: 14px; line-height: 1.6;">People need hypertrophy training, which combines mechanical tension and metabolic stress to activate hypertrophy. It usually involves multiple exercises, short rest intervals, and moderate to maximal effort.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Resistance Training for Hypertrophy</h2>
+            <p style="font-size: 14px; line-height: 1.6;">To train for hypertrophy, people should use moderate to heavy loads, around 67–85% of the one-rep max. High volume is critical, calculated as the number of sets multiplied by the number of reps in each set for each exercise. Beginners can start with four sets of 6–12 reps for 1–2 exercises per muscle group, aiming for 2–3 times a week. </p>
+            <p style="font-size: 14px; line-height: 1.6;">More experienced individuals can increase the volume to 4–8 sets and incorporate at least three exercises per muscle group. The choice of workout program can vary, but the fundamental principle remains the same. Additionally, ensure the proper work-to-rest ratio with 30–90 seconds of rest between sets, promoting efficient muscle recovery.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">How to Eat for Hypertrophy</h2>
+            <p style="font-size: 14px; line-height: 1.6;">Eating for hypertrophy means bulking up. It would help if people had a positive nutritional energy balance, meaning they consume more calories than they burn. Consume an additional 300-500 calories daily for muscle gain. Choose nutrient-dense foods like nuts, seeds, whole grains, and lean proteins. </p>
+            <p style="font-size: 14px; line-height: 1.6;">Ensure a balanced macronutrient distribution of protein, carbs, and fats. Aim for 0.8-1.6 g of protein per kg body weight, especially during intense training. Properly time your pre-workout and intra-workout meals with the correct macronutrient ratios.</p>
+            <p style="font-size: 14px; line-height: 1.6;">Micronutrients like amino acids play a vital role in muscle growth. Consult a healthcare provider or nutritionist to ensure the diet supports hypertrophy. Supplements may complement the diet as an energy booster before the workout, not replace it. </p>
+
+            <h2 style="font-size: 18px; font-weight: bold; margin-top: 20px;">Summary</h2>
+            <p style="font-size: 14px; line-height: 1.6;">
+                To activate hypertrophy, a combination of mechanical tension and metabolic stress is essential. Hypertrophy training typically involves multiple exercises, short rest intervals, and moderate to maximal effort. Beginners should aim for four sets of 6-12 reps for 1-2 exercises per muscle group, 2-3 times a week, gradually increasing volume. More experienced individuals can do 4-8 sets with at least three exercises per muscle group. Nutrition plays a crucial role, requiring a positive energy balance with an extra 300-500 calories daily. Optimal macronutrient distribution and meal timing, particularly around workouts, are critical. Micronutrients and supplements, like protein powder and creatine, can enhance muscle growth but should complement a balanced diet. Consult a healthcare provider or nutritionist for personalised advice.
+            </p>
+        </div>
+
+        <div id="5">
+            <h1 style="font-size: 24px; font-weight: bold;">Conclusion</h1>
+            <p style="font-size: 14px; line-height: 1.6;">When skeletal muscle fibres are activated, they create higher tension during resistance training, resulting in hypertrophy. It explains the series of reactions that the body experiences in response to a stressor. Although the best way to change the training variables to gain muscle growth is still debatable, working for hypertrophy often entails doing more repetitions at a lower intensity than traditional strength training. </p>
+
+            <p style="font-size: 14px; line-height: 1.6;"><i>Disclaimer: The purpose of this article is just to disperse knowledge and raise awareness. It does not intend to replace medical advice from professionals. </i></p>
+        </div>
+
+        <div id="6">
+            <h1 style="font-size: 24px; font-weight: bold;">Research Sources</h1>
+            <p style="font-size: 14px; line-height: 1.6;">
+                <a href="https://pubmed.ncbi.nlm.nih.gov/27219125/"><b>1. </b>Resistance training-induced changes in integrated myofibrillar protein synthesis are related to hypertrophy only after attenuation of muscle damage</a>
+                <br>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/3520748/"><b>2. </b>Exercise-induced skeletal muscle growth. Hypertrophy or hyperplasia?</a>
+                <br>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/20847704/"><b>3. </b>The mechanisms of muscle hypertrophy and their application to resistance training</a>
+                <br>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/29282529/"><b>4. </b>The development of skeletal muscle hypertrophy through resistance training: the role of muscle damage and muscle protein synthesis</a>
+                <br>
+                <a href="https://journals.lww.com/nsca-jscr/fulltext/2022/08000/the_effects_of_a_novel_quadrupedal_movement.17.aspx"><b>5. </b>https://pubmed.ncbi.nlm.nih.gov/6890445/</a>
+                <br>
+            </p>
+        </div>
+
+    </div>
+
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-body-tertiary text-muted mt-4">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+              <!-- Left -->
+              <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+              </div>
+              <!-- Left -->
+        
+              <!-- Right -->
+              <div>
+                <a href="" class="me-4 text-reset">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                  <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+        
+            <!-- Section: Links  -->
+            <section class="">
+              <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                      <i class="fas fa-gem me-3"></i>Fit Sphere
+                    </h6>
+                    <p>
+                      we're dedicated to helping you achieve your health and wellness goals.<br>
+                      From personalized workout plans and nutritional guidance to fitness tips<br>
+                      and motivational resources, we provide everything you need to lead an active,<br>
+                      balanced lifestyle. Whether you're a beginner or an experienced athlete, our community<br>
+                      and expert trainers are here to support your journey to a stronger, healthier you.<br>
+                    </p>
+                  </div>
+                  <!-- Grid column -->
+        
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                      Useful links
+                    </h6>
+                    <p>
+                      <a href="../BMI calculator/index.html" class="text-reset">BMI Calculator</a>
+                    </p>
+                    <p>
+                      <a href="../Diet/diet.html" class="text-reset">Diet</a>
+                    </p>
+                    <p>
+                      <a href="../Health/health.html" class="text-reset">Health</a>
+                    </p>
+                    <p>
+                      <a href="../Workout/workout.html" class="text-reset">Workout</a>
+                    </p>
+                  </div>
+                  <!-- Grid column -->
+        
+                  <!-- Grid column -->
+                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Contact us on Email & Phone No.</h6>
+                    <p><i class="fas fa-home me-3"></i> prajapatitushar9720@gmail.com</p>
+                    <p><i class="fas fa-home me-3"></i> yashvich.77@gmail.com</p>
+                    <p><i class="fas fa-home me-3"></i> prajapatitushar9720@gmail.com</p>
+                    <p><i class="fas fa-phone me-3"></i> +918439679293</p>
+                    <p><i class="fas fa-print me-3"></i> +919319935730</p>
+                    <p><i class="fas fa-print me-3"></i> +919305051985</p>
+                  </div>
+                  <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+              </div>
+            </section>
+            <!-- Section: Links  -->
+        
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+              © 2024 Copyright:
+              <a class="text-reset fw-bold" href="https://mdbootstrap.com/">FitSphere</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+          <!-- Footer -->
+</body>
+
+</html>

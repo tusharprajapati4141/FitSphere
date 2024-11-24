@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>workout</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: whitesmoke;
+    }
+    .navbar {
+        background: white;
+        font-family: calibri;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .navdiv {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo a {
+        font-size: 35px;
+        font-weight: 500;
+        color: black;
+        text-decoration: none;
+    }
+
+    li {
+        list-style: none;
+        display: inline-block;
+    }
+
+    li a {
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 25px;
+        text-decoration: none;
+        padding: 70px;
+    }
+
+    .content {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .content h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .content .author {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .content .author img {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .content .author .name {
+        font-weight: bold;
+    }
+
+    .content .author .date {
+        color: #888;
+        margin-left: 10px;
+    }
+
+    .content img.main-image {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .content p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .content .toc {
+        background-color: #f1f1f1;
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .content .toc h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .content .toc ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .content .toc ul li {
+        margin-bottom: 5px;
+    }
+
+    .content .toc ul li a {
+        font-size: 17px;
+        text-decoration: none;
+        color: #007bff;
+    }
+
+    .content h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        margin-top: 80px;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-4">
+        <img src="https://png.pngtree.com/png-vector/20240115/ourmid/pngtree-3d-body-builder-gym-logo-image-png-image_11437963.png" alt="Bootstrap" width="80" height="60">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">FitSphere</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../Diet/diet.html">Diet</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../weightloss/WeightLoss.html">WeightLoss</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../yoga/Yoga.html">Yoga</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Health/health.html">Health</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Workout/workout.html">Workout</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../BMI calculator/index.html">BMI Calculator</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="content">
+        <h1>
+            The Ultimate 7-Day Meal Plan for Intermittent Fasting
+        </h1>
+        <div class="author">
+            <!-- <img alt="Author Image" height="40"
+                src="https://storage.googleapis.com/a1aa/image/7AuhKGiWffop0kRBNVuQRhYwOj6ZQIfBdod7mIpK5HX6aWZnA.jpg"
+                width="40" /> -->
+            <div class="name">
+                Alpa Momaya
+            </div>
+            <div class="date">
+                July 3, 2023
+            </div>
+        </div>
+        <img alt="Workout" class="main-image" height="400"
+            src="https://www.healthifyme.com/blog/wp-content/uploads/2023/05/shutterstock_633349682-1.jpg" width="800" />
+        <p>
+            Intermittent fasting has gained significant prevalence as a powerful method for weight loss and overall health improvement. Its ability to enhance fat burning, optimise metabolic health, reduce calorie intake, boost growth hormone levels. It also encourages a commitment to a healthy diet that has captured the attention of many individuals seeking to transform their lifestyles.
+        </p>
+        <div class="toc">
+            <h2>
+                Table of Contents
+            </h2>
+            <a href="#diet">
+                1. Intermittent Fasting: An Overview
+
+            </a>
+            <br>
+            <a href="#health">
+                2. The Importance of Intermittent Fasting: A Research-Based Analysis
+            </a>
+            <br>
+            <a href="#3">
+                3. Guidelines to Know Before Planning an Intermittent Fasting Meal Plan
+            </a>
+            <br>
+            <a href="#4">
+                4. Other Important Tips for Successful Intermittent Fasting
+            </a>
+            <br>
+            <a href="#5">
+                5. 7-Day Reference Meal Plan for Intermittent Fasting (Alternate day fasting approach)
+            </a>
+            <br>
+            <a href="#6">
+                6. Intermittent Fasting Diet Plan: Potential Side Effects
+            </a>
+        </div>
+
+        <br>
+
+        <p style="font-size: 14px; line-height: 1.6;">
+            Choosing the right foods can be daunting when it comes to intermittent fasting. The selection of appropriate foods, portion sizes, and meal timings is crucial to ensure the effectiveness of fasting and maximise its benefits. Without careful consideration, the whole purpose of fasting may go in vain. It’s no wonder many people are confused and uncertain about what to eat and how to structure their meals.
+
+            This comprehensive article aims to provide a 7-day meal plan for intermittent fasting and essential tips to help you navigate this eating pattern successfully. By offering practical guidance and evidence-based recommendations, the article aims to empower you to make informed choices, optimise your intermittent fasting experience, and achieve your health and weight loss goals.
+        </p>
+
+        <br>
+
+        <div id="diet">
+            <h1 style="font-size: 24px; font-weight: bold;">Intermittent Fasting: An Overview</h1>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Intermittent fasting, at its core, involves alternating between eating and fasting periods. One can take several approaches when practising intermittent fasting. Still, the most common method is the 16:8 approach, where individuals fast for 16 hours and consume their meals within an 8-hour window. Another popular approach is the alternate-day fasting plan, while some opt for a 24-hour fast once or twice a week. Research shows that intermittent fasting offers many health benefits when implemented correctly. Some of the benefits are weight loss, improved blood sugar control, and reduced inflammation.
+            </p>
+        </div>
+
+        <br>
+
+        <div id="health">
+            <h1 style="font-size: 24px; font-weight: bold;">The Importance of Intermittent Fasting: A Research-Based Analysis
+                            </h1>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Weight Loss
+            </h2>
+            <p style="font-size: 14px; line-height: 1.6;">Scientific research has extensively explored the potential advantages of intermittent fasting, and the findings have been promising. One notable benefit is weight loss. Several studies prove intermittent fasting can significantly reduce body weight and fat percentage. It is because of several factors, including reduced calorie intake and increased fat-burning mechanisms within the body.</p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Insulin Sensitivity
+            </h2>
+            <p style="font-size: 14px; line-height: 1.6;">As per research, intermittent fasting has shown positive effects on insulin sensitivity, which is crucial for maintaining healthy blood sugar levels. By giving the body regular rest periods from constant eating, intermittent fasting stabilises insulin levels and helps improve the body’s response to this vital hormone. It, in turn, can contribute to better blood sugar control and may reduce the risk of developing type 2 diabetes.</p>
+            <h2 style="font-size: 18px; margin-top: 20px;">Improved Heart Health
+
+            </h2>
+            <p style="font-size: 14px; line-height: 1.6;">Intermittent fasting can lead to improved cardiovascular health. Studies showcase that it can lead to lower blood pressure levels, reduced levels of total cholesterol, and improvements in other cardiovascular risk factors. In addition, by promoting weight loss and improving insulin sensitivity, intermittent fasting may contribute to improved heart health and a lower risk of heart disease.
+            </p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Summary
+            </h2>
+            <p style="font-size: 14px; line-height: 1.6;">Intermittent fasting offers a compelling approach to improving various aspects of health. From weight loss and enhanced insulin sensitivity to cardiovascular benefits and potential cognitive advantages, the scientific evidence supporting the advantages of intermittent fasting continues to grow. However, it is crucial to approach intermittent fasting with caution and consider individual circumstances before starting. By understanding the potential benefits and limitations, one can make informed decisions and tailor an intermittent fasting plan that suits their needs and goals.
+
+            </p>
+        </div>
+
+        <br>
+
+        <div id="3">
+            <h1 style="font-size: 24px; font-weight: bold;">Guidelines to Know Before Planning an Intermittent Fasting Meal Plan
+            </h1>
+            <p style="font-size: 14px; line-height: 1.6;">Intermittent fasting may initially seem daunting, but the right approach can make it a successful and sustainable way to achieve your health and weight loss goals. First, it is crucial to know what foods to eat and avoid. Then, it is vital to plan your meal timings.
+            </p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">The Best Foods to Keep You Satisfied During Alternate Day Meals
+            </h2>
+            <p style="font-size: 14px; line-height: 1.6;">If you’re embarking on intermittent fasting, choosing foods that will keep you satisfied during your eating windows is essential. Focus on foods high in protein and fibre, which are remarkably filling. Some excellent options include whole grains, pulseslean meats, fish, eggs, tofu, nuts, seeds, and vegetables. These foods not only provide satiety but also offer essential nutrients to support your overall health.
+            </p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">Foods to Avoid
+            </h2>
+            <p style="font-size: 14px; line-height: 1.6;">Avoid foods containing high sugar or refined carbohydrates. These foods can cause fluctuations in blood sugar levels, leading to hunger and fatigue. Instead, opt for complex carbohydrates like whole grains and legumes, which provide a steady release of energy and help sustain you throughout your fasting periods. Avoid junk and processed foods which can increase the calorie and fat intake. These will nullify the positive effects of intermitend fasting.
+            </p>
+
+            <h2 style="font-size: 18px; margin-top: 20px;">How to Schedule Your Meals</h2>
+            <p style="font-size: 14px; line-height: 1.6;">When planning your meals for intermittent fasting, find a schedule that works for you. For example, many individuals find it helpful to start their fasting period after dinner and break their fast with a late breakfast or lunch the next day. This approach, commonly known as the 16:8 method, involves fasting for 16 hours and consuming all meals within an 8-hour window.</p>
+
+            <h2 style="font-size: 18px; font-weight: bold; margin-top: 20px;">Summary</h2>
+            <p style="font-size: 14px; line-height: 1.6;">
+                Intermittent fasting can be a successful and sustainable approach to achieving health and weight loss goals. By focusing on nutrient-dense foods high in protein and fibre, such as lean meats, fish, eggs, tofu, nuts, seeds, and vegetables, you can stay satisfied during your eating windows while supporting your overall health. It’s essential to avoid foods high in sugar or refined carbohydrates and instead opt for complex carbohydrates like whole grains and legumes. It is crucial to find a meal schedule that works for you, like the 16:8 method, and adjust it based on your body’s cues. Remember to customise intermittent fasting to fit your individual needs and consult with professionals for guidance.
+            </p>
+        </div>
+
+        <br>
+    </div>
+ <!-- Footer -->
+ <footer class="text-center text-lg-start bg-body-tertiary text-muted mt-4">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Fit Sphere
+            </h6>
+            <p>
+              we're dedicated to helping you achieve your health and wellness goals.<br>
+              From personalized workout plans and nutritional guidance to fitness tips<br>
+              and motivational resources, we provide everything you need to lead an active,<br>
+              balanced lifestyle. Whether you're a beginner or an experienced athlete, our community<br>
+              and expert trainers are here to support your journey to a stronger, healthier you.<br>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="./BMI calculator/index.html" class="text-reset">BMI Calculator</a>
+            </p>
+            <p>
+              <a href="./Diet/diet.html" class="text-reset">Diet</a>
+            </p>
+            <p>
+              <a href="./Health/health.html" class="text-reset">Health</a>
+            </p>
+            <p>
+              <a href="./Workout/workout.html" class="text-reset">Workout</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact us on Email & Phone No.</h6>
+            <p><i class="fas fa-home me-3"></i> prajapatitushar9720@gmail.com</p>
+            <p><i class="fas fa-home me-3"></i> yashvich.77@gmail.com</p>
+            <p><i class="fas fa-home me-3"></i> prajapatitushar9720@gmail.com</p>
+            <p><i class="fas fa-phone me-3"></i> +918439679293</p>
+            <p><i class="fas fa-print me-3"></i> +919319935730</p>
+            <p><i class="fas fa-print me-3"></i> +919305051985</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2024 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">FitSphere</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</body>
+
+</html>
